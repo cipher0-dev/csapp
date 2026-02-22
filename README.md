@@ -29,9 +29,12 @@ including any exercises and toy programs I create as tangents to the reading.
 - [ ] Data
 - [ ] Bomb
 - [ ] Attack
+- [ ] Buffer
+- [ ] Architecture
 - [ ] Cache
 - [ ] Malloc (checkpoint)
 - [ ] Malloc (final)
+- [ ] Performance
 - [ ] Shell
 - [ ] Proxy
 - [ ] SFS
