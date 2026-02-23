@@ -38,7 +38,7 @@ coursework including reading the textbook [CS:AAP3e](https://csapp.cs.cmu.edu/),
 
 ## Lectures
 
-- [ ] Lecture 01: Course Overview
+- [x] Lecture 01: Course Overview
 - [ ] Lecture 02: Bits, Bytes, and Integers
 - [ ] Lecture 03: Bits, Bytes, and Integers (cont.)
 - [ ] Lecture 04: Floating Point
