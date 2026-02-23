@@ -7,9 +7,6 @@ coursework including reading the textbook [CS:AAP3e](https://csapp.cs.cmu.edu/),
 [lab exercises](https://github.com/bmadone/csapp-labs), and
 [video lectures](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22b96d90ae-9871-4fae-91e2-b1627b43e25e%22).
 
-This repo tracks my progress on reading ,
-including any exercises and toy programs I create as tangents to the reading.
-
 - [ ] Chapter 01 - A Tour of Computer Systems
 - [ ] Chapter 02 - Representing and Manipulating Information
 - [ ] Chapter 03 - Machine-Level Representation of Programs
