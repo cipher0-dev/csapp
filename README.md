@@ -1,11 +1,14 @@
 
-# Computer Systems: A Programmer's Perspective - Randal E. Bryant and David R. O'Hallaron
+# Computer Systems: A Programmer's Perspective
+
+### Randal E. Bryant and David R. O'Hallaron
 
 This repo tracks my work on Carnegie Mellon
-[15-213 Introduction to Computer Systems](https://www.cs.cmu.edu/~213/)
-coursework including reading the textbook [CS:AAP3e](https://csapp.cs.cmu.edu/),
-[lab exercises](https://github.com/bmadone/csapp-labs), and
-[video lectures](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22b96d90ae-9871-4fae-91e2-b1627b43e25e%22).
+[15-213 Introduction to Computer Systems][course] coursework including reading
+the textbook [CS:AAP3e][book], [lab exercises][labs], and
+[video lectures][lectures].
+
+## Chapters
 
 - [ ] Chapter 01 - A Tour of Computer Systems
 - [ ] Chapter 02 - Representing and Manipulating Information
@@ -78,3 +81,9 @@ coursework including reading the textbook [CS:AAP3e](https://csapp.cs.cmu.edu/),
 - [ ] Recitation 13: Proxy Lab
 - [ ] Recitation 14: Synchronization
 - [ ] Recitation 15: Exam review
+
+
+[course]: https://www.cs.cmu.edu/~213/
+[book]: https://csapp.cs.cmu.edu/
+[labs]: https://github.com/bmadone/csapp-labs
+[lectures]: https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22b96d90ae-9871-4fae-91e2-b1627b43e25e%22
