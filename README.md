@@ -10,7 +10,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 
 ## Chapters
 
-- [ ] Chapter 01 - A Tour of Computer Systems
+- [x] Preface
+- [x] Chapter 01 - A Tour of Computer Systems
 - [ ] Chapter 02 - Representing and Manipulating Information
 - [ ] Chapter 03 - Machine-Level Representation of Programs
 - [ ] Chapter 04 - Processor Architecture
@@ -24,6 +25,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [ ] Chapter 12 - Concurrent Programming
 
 ## Labs
+
+[Labs Repo][labs-repo]
 
 - [ ] C Programming
 - [ ] Data
@@ -85,5 +88,6 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 
 [course]: https://www.cs.cmu.edu/~213/
 [book]: https://csapp.cs.cmu.edu/
-[labs]: https://github.com/bmadone/csapp-labs
+[labs]: https://csapp.cs.cmu.edu/3e/labs.html
+[labs-repo]: https://github.com/bmadone/csapp-labs
 [lectures]: https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22b96d90ae-9871-4fae-91e2-b1627b43e25e%22
