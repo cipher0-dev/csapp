@@ -24,6 +24,10 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [ ] Chapter 11 - Network Programming
 - [ ] Chapter 12 - Concurrent Programming
 
+## Web Asides
+
+- [x] DATA:BOOL
+
 ## Labs
 
 [Labs Repo][labs-repo]
