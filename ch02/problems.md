@@ -119,3 +119,163 @@ C. The first 8 bits of the float, probably because these are use for exponent.
 * conversion to binary was done in python just to save time
 
 2.7. 6d 6e 6f 70 71 72
+
+2.8.()
+
+|  Op |   Result  |
+|-----|-----------|
+|   a | 0100 1110 |
+|   b | 1110 0001 |
+|  ~a | 1011 0001 |
+|  ~b | 0001 1110 |
+| a&b | 0100 0000 |
+| a|b | 1110 1111 |
+| a^b | 1010 1111 |
+
+2.9.
+
+A.
+
+| R | G | B |  Color  | ~Color  |
+|---|---|---|---------|---------|
+| 0 | 0 | 0 | Black   | White   |
+| 0 | 0 | 1 | Blue    | Yellow  |
+| 0 | 1 | 0 | Green   | Magenta |
+| 0 | 1 | 1 | Cyan    | Red     |
+| 1 | 0 | 0 | Red     | Cyan    |
+| 1 | 0 | 1 | Magenta | Green   |
+| 1 | 1 | 0 | Yellow  | Blue    |
+| 1 | 1 | 1 | White   | Black   |
+
+B.
+
+Blue | Green = Cyan
+Yellow & Cyan = Green
+Red ^ Magenta = Blue
+
+2.10.
+
+| Step | *x |  *y |
+|------|----|-----|
+| Init |  a |  b  |
+|   1  |  a | a^b |
+|   2  |  b | a^b |
+|   3  |  b |  a  |
+
+2.11.
+
+A. k*
+B. Because each operation is mutating the same memory address. So when you
+   assign to *y on Step 1, you are actually mutating both *y and *x. The same
+   applies to the other steps.
+C. Remove the `=` from the `first <= last` loop condition.
+
+* I kinda got this one wrong initially because I was thinking about the wth
+  element (counting from 1) vs the ith index (counting from 0).
+
+2.12.
+
+A. `x & 0xFF`
+B. `x ^ ~0xFF`
+C. `x | 0xFF`
+
+2.13.
+
+`bis` is like `x | m`:
+
+```
+  0 1 m
+0 0 1
+1 1 1
+x
+```
+
+`bic` is like `x & ~m`:
+
+```
+  0 1 m
+0 0 0
+1 1 0
+x
+```
+
+```
+  0 1 m
+0 0 1
+1 1 0
+x
+```
+
+A. bis(x, y)
+B. bis(bic(x, y), bic(y, x))
+
+* I struggled a bit on B since I forgot the property x ^ y = (x & ~y) | (y & ~x)
+
+2.14.
+
+a = 0x55 (0b0101_0101)
+b = 0x46 (0b0100_0110)
+
+| Expression | Value |
+|------------|-------|
+|   a  &  b  |  0x44 |
+|   a  |  b  |  0x57 |
+|  ~a  | ~b  |  0xbb |
+|   a  & !b  |  0x00 |
+|   a &&  b  |  0x01 |
+|   a ||  b  |  0x01 |
+|  !a || !b  |  0x00 |
+|   a && ~b  |  0x01 |
+
+2.15.
+
+operators:
+
+```
+~
+&
+|
+^
+
+!
+&&
+||
+```
+
+| x | y | x == y | x ^ y | ~(x ^ y) |
+|---|---|--------|-------|----------|
+| 0 | 0 |    1   |   0   |     1    |
+| 0 | 1 |    0   |   1   |     0    |
+| 1 | 0 |    0   |   1   |     0    |
+| 1 | 1 |    1   |   0   |     1    |
+
+|  x |  y | x == y | ~(x ^ y) | x ^ y | !(x ^ y) |
+|----|----|--------|----------|-------|----------|
+| 00 | 00 |   01   |    11    |   00  |    01    |
+| 00 | 01 |   00   |    10    |   01  |    00    |
+| 00 | 10 |   00   |    01    |   10  |    00    |
+| 00 | 11 |   00   |    00    |   11  |    00    |
+| 01 | 00 |   00   |    10    |   01  |    00    |
+| 01 | 01 |   01   |    11    |   00  |    01    |
+| 01 | 10 |   00   |    00    |   11  |    00    |
+| 01 | 11 |   00   |    01    |   10  |    00    |
+| 10 | 00 |   00   |    01    |   10  |    00    |
+| 10 | 01 |   00   |    00    |   11  |    00    |
+| 10 | 10 |   01   |    11    |   00  |    01    |
+| 10 | 11 |   00   |    10    |   01  |    00    |
+| 11 | 00 |   00   |    00    |   11  |    00    |
+| 11 | 01 |   00   |    01    |   10  |    00    |
+| 11 | 10 |   00   |    10    |   01  |    00    |
+| 11 | 11 |   01   |    11    |   00  |    01    |
+
+`!(x ^ y)`
+
+2.16.
+
+|         a        |        a<<2      |   logical a>>3   |  arithmetic a>>3 |
+|  hex |    bin    |  hex |    bin    |  hex |    bin    |  hex |    bin    |
+|------|-----------|------|-----------|------|-----------|------|-----------|
+| 0xd4 | 1101 0100 | 0x50 | 0101 0000 | 0x1a | 0001 1010 | 0xfa | 1111 1010 |
+| 0x64 | 0110 0100 | 0x90 | 1001 0000 | 0x0c | 0000 1100 | 0x0c | 0000 1100 |
+| 0x72 | 0111 0010 | 0xc8 | 1100 1000 | 0x0e | 0000 1110 | 0x0e | 0000 1110 |
+| 0x44 | 0100 0100 | 0x10 | 0001 0000 | 0x08 | 0000 1000 | 0x08 | 0000 1000 |
