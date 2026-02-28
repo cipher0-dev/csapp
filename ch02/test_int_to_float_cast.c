@@ -18,15 +18,20 @@ int main(int argc, char *argv[]) {
   auto y = (float)x;
 
   int *ip = &x;
-  float *fp = (void *)ip;
+  auto *fp = (float *)ip;
 
   printf("x: %d\n", x);
   show_bytes(&x, sizeof(x));
-  printf("ip: %p\n", ip);
-  show_bytes(&ip, sizeof(ip));
   printf("y: %f\n", y);
   show_bytes(&y, sizeof(y));
+
+  printf("ip: %p\n", ip);
+  show_bytes(&ip, sizeof(ip));
+  printf("*ip: %d\n", *ip);
+  show_bytes(ip, sizeof(*ip));
   printf("fp: %p\n", fp);
   show_bytes(&fp, sizeof(fp));
+  printf("*fp: %f\n", *fp);
+  show_bytes(fp, sizeof(*fp));
   return EXIT_SUCCESS;
 }
