@@ -27,6 +27,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 ## Web Asides
 
 - [x] DATA:BOOL
+- [x] DATA:TMIN
 
 ## Labs
 
@@ -49,7 +50,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 ## Lectures
 
 - [x] Lecture 01: Course Overview
-- [ ] Lecture 02: Bits, Bytes, and Integers
+- [x] Lecture 02: Bits, Bytes, and Integers
 - [ ] Lecture 03: Bits, Bytes, and Integers (cont.)
 - [ ] Lecture 04: Floating Point
 - [ ] Lecture 05: Machine-Level Programming I: Basics
@@ -88,7 +89,6 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [ ] Recitation 13: Proxy Lab
 - [ ] Recitation 14: Synchronization
 - [ ] Recitation 15: Exam review
-
 
 [course]: https://www.cs.cmu.edu/~213/
 [book]: https://csapp.cs.cmu.edu/

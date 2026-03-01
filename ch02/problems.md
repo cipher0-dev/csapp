@@ -280,7 +280,7 @@ operators:
 | 0x72 | 0111 0010 | 0xc8 | 1100 1000 | 0x0e | 0000 1110 | 0x0e | 0000 1110 |
 | 0x44 | 0100 0100 | 0x10 | 0001 0000 | 0x08 | 0000 1000 | 0x08 | 0000 1000 |
 
-2.17.
+A2.17.
 
 | Hex |  Bin | B2U4(x) | B2T4(x) |
 | ----|------|---------|---------|
@@ -302,3 +302,96 @@ F.  0x88 -> 0000 1000 1000 -> 8+128 = 136
 G. 0x1f8 -> 0001 1111 1000 -> 8+16+32+64+128+256 = 504
 H.  0xc0 -> 0000 1100 0000 -> 64+128 = 192
 I. -0x48 -> 0000 0100 1000 -> 8+64 = -72
+
+2.19.
+
+|  x |  Bin  | T2U4(x) |
+|----|-------|---------|
+| -1 |  1111 |    15   |
+| -5 |  1011 |    11   |
+| -6 |  1010 |    10   |
+| -4 |  1100 |    12   |
+|  1 |  0001 |     1   |
+|  8 | 01000 |     8   |
+
+2.20.
+
+Basically any non-negative value is the same in both representations, and then
+with negative values you look at the bit position of the sign bit, and instead
+of subtracting that from the value of the rest of the bits, you would add it.
+Since the value has already subtracted that term, you add twice the value hence
+2^w vs 2^(w-1).
+
+2.21.
+
+|            Expression          |   Type   | Evaluation |
+|--------------------------------|----------|------------|
+| -2147483647-1  ==  2147483648u | unsigned |      1     |
+| -2147483647-1   <  2147483647  |   signed |      1     |
+| -2147483647-1u  <  2147483647  | unsigned |      0     |
+| -2147483647-1   < -2147483647  |   signed |      1     |
+| -2147483647-1u  < -2147483647  | unsigned |      1     |
+
+2.22.
+
+A.   1100 =       -8+4 = -4
+B.  11100 =    -16+8+4 = -4
+C. 111100 = -32+16+8+4 = -4
+
+2.23.
+
+A.
+
+|      w     |   fun1(w)  |   fun2(w)  |
+|------------|------------|------------|
+| 0x00000076 | 0x00000076 | 0x00000076 |
+| 0x87654321 | 0x00000021 | 0x00000021 |
+| 0x000000c9 | 0x000000c9 | 0xffffffc9 |
+| 0xedcba987 | 0x00000087 | 0xffffff87 |
+
+B. `fun1` reads the least significant byte of the word. `fun2` is interpreting
+   the word as a signed value and reading the least significant byte.
+
+2.24.
+
+|     Hex    |  Unsigned  | Two's Complement |
+| Og | Trunc | Og | Trunc |   Og   |  Trunc  |
+|----|-------|----|-------|--------|---------|
+|  1 |   1   |  1 |   1   |    1   |    1    |
+|  3 |   3   |  3 |   3   |    3   |    3    |
+|  5 |   5   |  5 |   5   |    5   |    5    |
+|  C |   4   | 12 |   4   |   -4   |    4    |
+|  E |   6   | 14 |   6   |   -2   |    6    |
+
+2.25.
+
+When length = 0, in the for loop condition we subract 1 from it, causing it to
+underflow up to UMax. i will then be less than that value reading adding parts
+of memory to the result that it shouldn't. The simple fix is to do `i < length`
+vs `i <= length-1`.
+
+2.26.
+
+A. When t is longer than s.
+B. If len(t) > len(s), then you have a negative value which will underflow the
+   unsigned size_t, making it positive.
+C. `return strlen(s) > strlen(t);`
+
+2.27.
+
+```c
+int uadd_ok(unsigned x, unsigned y) {
+  return x + y >= x;
+}
+```
+
+2.28.
+
+|     x     |    -x     |
+| hex | dec | dec | hex |
+|-----|-----|-----|-----|
+|  1  |   1 |  15 |  f  |
+|  4  |   4 |  12 |  c  |
+|  7  |   7 |   9 |  9  |
+|  a  |  10 |   6 |  6  |
+|  e  |  14 |   2 |  2  |
