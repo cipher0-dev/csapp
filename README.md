@@ -77,7 +77,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [ ] Lecture 25: Synchronization: Advanced
 - [ ] Lecture 26: Thread-Level Parallelism
 - [ ] Lecture 27: Future of Computing
-- [ ] Recitation 03: Datalab and Data Representations
+- [x] Recitation 03: Datalab and Data Representations
 - [ ] Recitation 04: Bomb Lab
 - [ ] Recitation 05: Attack Lab and Stacks
 - [ ] Recitation 06: C Review
