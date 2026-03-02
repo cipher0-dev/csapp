@@ -395,3 +395,119 @@ int uadd_ok(unsigned x, unsigned y) {
 |  7  |   7 |   9 |  9  |
 |  a  |  10 |   6 |  6  |
 |  e  |  14 |   2 |  2  |
+
+2.29.
+
+| x     | y     |   x+y  | x+y (t) | Case |
+|-------|-------|--------|---------|------|
+|  -12  |  -15  |   -27  |    5    |  1   |
+| 10100 | 10001 | 100101 |  00101  |      |
+|   -8  |   -8  |   -16  |   -16   |  2   |
+| 11000 | 11000 | 110000 |  10000  |      |
+|   -9  |    8  |   -1   |   -1    |  2   |
+| 10111 | 01000 | 111111 |  11111  |      |
+|    2  |    5  |    7   |    7    |  3   |
+| 00010 | 00101 | 000111 |  00111  |      |
+|   12  |    4  |   16   |   -16   |  4   |
+| 01100 | 00100 | 010000 |  10000  |      |
+
+2.30.
+
+```c
+int tadd_ok(int x, int y) {
+  if (x < 0 && y < 0) {
+    return x+y >= 0; // case 1
+  } else if (x >= 0 && y >= 0) {
+    return x+y < 0; // case 4
+  }
+
+  return 1; // case 2 and 3
+}
+```
+
+2.31. Because subtracting the operands from the result and comparing to the
+      other operand, will work even if an overflow occured because it is mod
+      arithmetic.
+
+2.32.
+
+Two bit T values:
+
+TMin2 = 10 = -2
+      = 11 = -1
+      = 00 =  0
+TMax2 = 01 =  1
+
+10 10 (-2 -2) -> 10 10 (-2 -2) -> X
+10 11 (-2 -1) -> 10 01 (-2  1) ->
+10 00 (-2  0) -> 10 00 (-2  0) ->
+10 01 (-2  1) -> 10 11 (-2 -1) ->
+
+11 10 (-1 -2) -> 11 10 (-1 -2) -> X
+11 11 (-1 -1) -> 11 01 (-1  1) ->
+11 00 (-1  0) -> 11 00 (-1  0) ->
+11 01 (-1  1) -> 11 11 (-1 -1) ->
+
+00 10 ( 0 -2) -> 00 10 ( 0 -2) -> X
+00 11 ( 0 -1) -> 00 01 ( 0  1) ->
+00 00 ( 0  0) -> 00 00 ( 0  0) ->
+00 01 ( 0  1) -> 00 11 ( 0 -1) ->
+
+01 10 ( 1 -2) -> 01 10 ( 1 -2) -> x
+01 11 ( 1 -1) -> 01 01 ( 1  1) ->
+01 00 ( 1  0) -> 01 00 ( 1  0) ->
+01 01 ( 1  1) -> 01 11 ( 1 -1) ->
+
+When y is equal to Tmin, things get weird.
+
+2.33.
+
+|     x     |    -x     |
+| Hex | Dec | Dec | Hex |
+|-----|-----|-----|-----|
+|  2  |   2 |  -2 |  e  |
+|  3  |   3 |  -3 |  d  |
+|  9  |  -7 |   7 |  7  |
+|  b  |  -5 |   5 |  5  |
+|  c  |  -4 |   4 |  4  |
+
+2.34. Skip
+2.35. Skip
+2.36. Skip
+
+2.37.
+
+A. No, size_t was already an unsigned 64 bit integer, and the expression can
+   still overflow.
+B. Use calloc and handle the error case for overflow.
+
+2.38. It is going to be limited by the bit width and the size of a.
+
+2.39. Skip
+2.40. Skip
+2.41. Skip
+2.42. Skip
+2.43. Skip
+
+2.44.
+
+int is 32bits (2s comp)
+
+```c
+int x = foo();
+int y = bar();
+
+unsigned ux = x;
+unsigned uy = y;
+```
+
+A. False, because TMin minus 1 will be positive.
+B. True, if x&7 == 7 then all 1s are set in low order bits, then shifted up to
+   the sign bit location.
+C. False, a negative value multipled by itself can overflow and still be
+   negative. Eg, -2130771713.
+D. True, all postitive values of x can be negated.
+E. False, because TMin negated will be itself.
+F. True, because sumation for both unsigned and 2s complement values are the
+   same, and == converts the LHS to unsigned.
+G. Guess: True, but I have no idea.

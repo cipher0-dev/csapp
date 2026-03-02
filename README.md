@@ -26,8 +26,9 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 
 ## Web Asides
 
-- [x] DATA:BOOL
 - [x] DATA:TMIN
+- [x] DATA:BOOL
+- [ ] DATA:TNEG Skip
 
 ## Labs
 
@@ -51,8 +52,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 
 - [x] Lecture 01: Course Overview
 - [x] Lecture 02: Bits, Bytes, and Integers
-- [ ] Lecture 03: Bits, Bytes, and Integers (cont.)
-- [ ] Lecture 04: Floating Point
+- [x] Lecture 03: Bits, Bytes, and Integers (cont.)
+- [x] Lecture 04: Floating Point
 - [ ] Lecture 05: Machine-Level Programming I: Basics
 - [ ] Lecture 06: Machine-Level Programming II: Control
 - [ ] Lecture 07: Machine-Level Programming III: Procedures
