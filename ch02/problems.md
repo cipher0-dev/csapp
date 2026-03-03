@@ -511,3 +511,43 @@ E. False, because TMin negated will be itself.
 F. True, because sumation for both unsigned and 2s complement values are the
    same, and == converts the LHS to unsigned.
 G. Guess: True, but I have no idea.
+
+2.45. Skip
+2.46. Skip, maybe come back after reading is done.
+2.47. Skip
+2.48. Skip
+2.49. Skip
+2.50. Skip
+2.51. Skip
+2.52. Skip
+
+2.53.
+
+```c
+unsigned long __POS_INFINITY = 0x7ff0000000000000;
+unsigned long __NEG_INFINITY = 0xfff0000000000000;
+unsigned long __NEG_ZERO = 0x8000000000000000;
+
+#define POS_INFINITY *(double *)(&__POS_INFINITY)
+#define NEG_INFINITY *(double *)(&__NEG_INFINITY)
+#define NEG_ZERO *(double *)(&__NEG_ZERO)
+```
+
+I decided to do this with bit patterns because it was fun to do it this way. The
+problem with this approach is that 24 bytes of memory are required to store the
+values and I don't think the compiler can optimize that away.
+
+2.54.
+
+A. True, no rounding, no chance of overflow
+B. False, loss of precision 0x7fffffff
+C. False, loss of precision
+D. True, no rounding, no chance of overflow
+E. True, just flipping the sign bit
+F. True, because they both force floating point division and the operands are
+   converted to doubles
+G. True, because all negative values will fip positive, and if they overflow,
+   they will become +Inf
+H. False, d could be at the boundary where it is about to overflow, and f puts
+   it to Inf, in which case subtracting f will still return Inf which is not
+   equal to d

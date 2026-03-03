@@ -12,7 +12,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 
 - [x] Preface
 - [x] Chapter 01 - A Tour of Computer Systems
-- [ ] Chapter 02 - Representing and Manipulating Information
+- [x] Chapter 02 - Representing and Manipulating Information
 - [ ] Chapter 03 - Machine-Level Representation of Programs
 - [ ] Chapter 04 - Processor Architecture
 - [ ] Chapter 05 - Optimizing Program Performance
