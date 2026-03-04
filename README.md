@@ -12,8 +12,35 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 
 - [x] Preface
 - [x] Chapter 01 - A Tour of Computer Systems
+  - [x] 1.1 Information Is Bits + Context
+  - [x] 1.2 Programs Are Translated by Other Programs into Different Forms
+  - [x] 1.3 It Pays to Understand How Compilation Systems Work
+  - [x] 1.4 Processors Read and Interpret Instructions Stored in Memory
+  - [x] 1.5 Caches Matter
+  - [x] 1.6 Storage Devices Form a Hierarchy
+  - [x] 1.7 The Operating System Manages the Hardware
+  - [x] 1.8 Systems Communicate with Other Systems Using Networks
+  - [x] 1.9 Important Themes
+  - [x] 1.10 Summary
 - [x] Chapter 02 - Representing and Manipulating Information
+  - [x] 2.1 Information Storage
+  - [x] 2.2 Integer Representations
+  - [x] 2.3 Integer Arithmetic
+  - [x] 2.4 Floating Point
+  - [x] 2.5 Summary
 - [ ] Chapter 03 - Machine-Level Representation of Programs
+  - [ ] 3.1 A Historical Perspective
+  - [ ] 3.2 Program Encodings
+  - [ ] 3.3 Data Formats
+  - [ ] 3.4 Accessing Information
+  - [ ] 3.5 Arithmetic and Logical Operations
+  - [ ] 3.6 Control
+  - [ ] 3.7 Procedures
+  - [ ] 3.8 Array Allocation and Access
+  - [ ] 3.9 Heterogeneous Data Structures
+  - [ ] 3.10 Combining Control and Data in Machine-Level Programs
+  - [ ] 3.11 Floating-Point Code
+  - [ ] 3.12 Summary
 - [ ] Chapter 04 - Processor Architecture
 - [ ] Chapter 05 - Optimizing Program Performance
 - [ ] Chapter 06 - The Memory Hierarchy
