@@ -34,7 +34,6 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 
 [Labs Repo][labs-repo]
 
-- [ ] C Programming
 - [x] Data
 - [ ] Bomb
 - [ ] Attack
@@ -46,7 +45,6 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [ ] Performance
 - [ ] Shell
 - [ ] Proxy
-- [ ] SFS
 
 ## Lectures
 
