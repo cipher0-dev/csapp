@@ -35,7 +35,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 [Labs Repo][labs-repo]
 
 - [ ] C Programming
-- [ ] Data
+- [x] Data
 - [ ] Bomb
 - [ ] Attack
 - [ ] Buffer
