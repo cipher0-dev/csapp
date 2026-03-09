@@ -29,11 +29,11 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 2.4 Floating Point
   - [x] 2.5 Summary
 - [ ] Chapter 03 - Machine-Level Representation of Programs
-  - [ ] 3.1 A Historical Perspective
-  - [ ] 3.2 Program Encodings
-  - [ ] 3.3 Data Formats
-  - [ ] 3.4 Accessing Information
-  - [ ] 3.5 Arithmetic and Logical Operations
+  - [x] 3.1 A Historical Perspective
+  - [x] 3.2 Program Encodings
+  - [x] 3.3 Data Formats
+  - [x] 3.4 Accessing Information
+  - [x] 3.5 Arithmetic and Logical Operations
   - [ ] 3.6 Control
   - [ ] 3.7 Procedures
   - [ ] 3.8 Array Allocation and Access
@@ -56,6 +56,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] DATA:TMIN
 - [x] DATA:BOOL
 - [ ] DATA:TNEG Skip
+- [ ] ASM:I32
+- [ ] ASM:EASM
 
 ## Labs
 
@@ -79,8 +81,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Lecture 02: Bits, Bytes, and Integers
 - [x] Lecture 03: Bits, Bytes, and Integers (cont.)
 - [x] Lecture 04: Floating Point
-- [ ] Lecture 05: Machine-Level Programming I: Basics
-- [ ] Lecture 06: Machine-Level Programming II: Control
+- [x] Lecture 05: Machine-Level Programming I: Basics
+- [x] Lecture 06: Machine-Level Programming II: Control
 - [ ] Lecture 07: Machine-Level Programming III: Procedures
 - [ ] Lecture 08: Machine-Level Programming IV: Data
 - [ ] Lecture 09: Machine-Level Programming V: Advanced Topics
@@ -103,7 +105,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [ ] Lecture 26: Thread-Level Parallelism
 - [ ] Lecture 27: Future of Computing
 - [x] Recitation 03: Datalab and Data Representations
-- [ ] Recitation 04: Bomb Lab
+- [x] Recitation 04: Bomb Lab
 - [ ] Recitation 05: Attack Lab and Stacks
 - [ ] Recitation 06: C Review
 - [ ] Recitation 07: Cache Lab and Blocking
