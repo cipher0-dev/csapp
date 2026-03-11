@@ -164,3 +164,58 @@ uremdiv:
   movq %rdx, (%rcx)
   ret
 ```
+
+3.13.
+
+A.
+
+data_t = int
+COMP   = <
+
+B.
+
+data_t = short
+COMP   = >=
+
+C.
+
+data_t = unsigned char, char (if it is unsigned by default by the implementation)
+COMP   = <=
+
+D.
+
+data_t = long (signed or unsgined), void *
+COMP   = !=
+
+3.14.
+
+A.
+
+~(SF ^ OF)
+~(SF ^ 0)
+~SF
+
+data_t = long
+TEST   = >=
+
+B.
+
+data_t = short (signed or unsigned)
+TEST   = ==
+
+C.
+
+data_t = unsigned char
+TEST   = >, !=
+
+D.
+
+data_t = int
+TEST   = <=
+
+3.15.
+
+A. The instruction past the callq instruction (0x4003fe).
+B. The instruction -12 bytes from the start of the next instruction (0x400425).
+C. ja (0x400543), pop (0x400545)
+D. The instruction -141 byttes from the start of the nextd instruction (0x400560).
