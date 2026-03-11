@@ -219,3 +219,67 @@ A. The instruction past the callq instruction (0x4003fe).
 B. The instruction -12 bytes from the start of the next instruction (0x400425).
 C. ja (0x400543), pop (0x400545)
 D. The instruction -141 byttes from the start of the nextd instruction (0x400560).
+
+3.16.
+
+A.
+
+```c
+void cond(short a, short *p) {
+  if (!a)
+    goto done;
+  if (a <= *p)
+    goto done;
+  *p = a;
+done:
+  return;
+}
+```
+
+B.
+
+The if condition has two conditions anded together so there are two conditions
+to check.
+
+3.17.
+
+A.
+
+```c
+long gotodiff_se(long x, long y) {
+  long result;
+  if (x < y)
+    goto true;
+  ge_cnt++;
+  result = x - y;
+  return result;
+x_lt_y:
+  lt_cnt++;
+  result = y - x;
+  return result;
+}
+```
+
+B. Maybe for performance to allow the normal path the be predicted more often by
+   having the less frequent codition be the jump.
+
+3.18.
+
+a. z + y - x
+b. z > 5
+c. y > 2
+d. x / z
+e.  x / y
+f. z < 3
+g. z / y
+
+3.19.
+
+45 = (25 + x)/2
+90 = 25 + x
+x = 90 - 25 = 65
+
+A. 40 cycles
+B. 65 cycles
+
+
