@@ -282,4 +282,252 @@ x = 90 - 25 = 65
 A. 40 cycles
 B. 65 cycles
 
+3.20.
 
+A. /
+
+B.
+
+```asm
+# short arith(short x)
+# x in %rdi
+arith:
+  leaq   15(%rdi), %rbx # rbx =  x+15
+  testq  %rdi, %rdi     # sets flags based on x
+  cmovns %rdi, %rbx     # if (x>=0) rbx = x
+  sarq   $4, %rbx       # rbx /= 16, not sure why this isn't rax if it is returned
+  ret
+```
+
+3.21.
+
+```c
+short test(short x, short y) {
+  short val = y + 12;
+  if (x < 0) {
+    if (x < y)
+      val = x * y;
+    else
+      val = x | y;
+  } else if (y >= 10)
+    val = x / y;
+  return val;
+}
+```
+
+```asm
+# short test(short x, short y)
+# x in %rdi, y in %rsi
+test:
+  leaq 12(%rsi), %rbx  # val = y + 12
+
+  testq %rdi, %rdi     # test x & x
+  jge .L2              # if (x >= 0) goto .L2
+
+  movq   %rdi, %rbx    # val = x
+  imulq  %rsi, %rbx    # val *= y
+  movq   %rdi, %rdx    # val2 = x
+  orq    %rsi, %rdx    # val2 |= y
+  cmpq   %rsi, %rdi    # comp x - y
+  cmovge %rdx, %rbx    # if (x >= y) val = val2
+  ret
+
+.L2:
+  idivq  %rsi, %rdi    # x = x / y
+  cmpq   $10, %rsi     # comp y - 10
+  cmovge %rdi, %rbx    # if (y >= 10) val = x
+  ret
+```
+
+3.22.
+
+A. Yea, it overflowed.
+B. It does not overflow.
+
+3.23.
+
+A.
+
+x = rdi and rbx
+y = rcx
+n = rdx
+
+B. p is initialized once and never assigned to again, therefore it is an alias
+   to its inital value (x).
+
+C.
+
+```asm
+# short dw_loop(short x)
+# x initially in %rdi
+dw_loop:
+  movq  %rdi, %rbx         # copy x
+  movq  %rdi, %rcx         # y = x
+  idivq $9, %rcx           # y /= 9
+  leaq  (,%rdi,4), %rdx    # n = x*4
+.L2:
+  leaq  5(%rbx,%rcx), %rcx # y += x + 5, how is this correct?
+  subq  $1, %rdx           # n -= 1 ?? shouldn't this be 2?
+  testq %rdx, %rdx         # test n
+  jg    .L2                # if (n > 0) goto .L2
+  rep; ret
+```
+
+3.24.
+
+```c
+short loop_while(short a, short b) {
+  short result = 0;
+  while (a > b) {
+    result = result + b*a;
+    a = a - 1;
+  }
+  return result;
+}
+```
+
+3.25.
+
+```c
+long loop_while2(long a, long b) {
+  long result = b;
+  while (b > 0) {
+    result = result * a;
+    b = b - a;
+  }
+  return result;
+}
+```
+
+3.26.
+
+A. jump-to-middle
+B.
+
+```c
+short test_one(unsigned short x) {
+  short val = 1;
+  while (x) {
+    val ^= x;
+    x >>= 1;
+  }
+  return val & 0;
+}
+```
+
+C. It returns 0. The book is on crack talking about it computing parity.
+
+3.27.
+
+```c
+void fibonacci(int n) {
+  int a = 0;
+  int b = 1;
+  int tmp = 0;
+
+  if (n <= 0)
+    goto done;
+
+loop:
+  printf("%d\n", a);
+  tmp = a;
+  a = b;
+  b += tmp;
+  n--;
+  if (n > 0)
+    goto loop;
+
+done:
+  return;
+}
+```
+
+3.28.
+
+A.
+
+```c
+short test_two(unsigned short x) {
+  short val = 0;
+  short i;
+  for (i = 1, val = 65; i; ++i) {
+    val *= 2;
+    val |= !!x;
+    x >> 1;
+  }
+  return val;
+}
+```
+
+```asm
+# short test_two(unsigned short x)
+# x in %rdi
+test_two:
+  movl $1, %edx    # i = 1
+  movl $65, %eax   # val = 65
+.L10:
+  movq %rdi, %rcx  # tmp = x
+  andl $1, %ecx    # tmp = !!tmp
+  addq %rax, %rax  # val *= 2
+  orq %rcx, %rax   # val |= tmp
+  shrq %rdi        # x >>= 1
+  addq $1, %rdx    # i += 1
+  jne .L10         # if (i) goto .L10
+  rep; ret         # return val
+```
+
+B. The initial loop can be assumed to always be true.
+C. I have no clue. Note: I think the book used the wrong asm for this or
+   something. Given the amount of mistakes in the book I don't exactly trust their
+   ASM here.
+
+3.29.
+
+A. We need to make sure that the increment of i always happens, even with the
+   continue. We wouldn't be able to just jump to the start of the loop.
+B. I would just inline the increment before the goto to the top of the loop
+   body but you could also just goto end where end is where the increment is at
+   the end of the loop body.
+
+3.30.
+
+A. -2, -1, 0, 1, 3, 4, 6
+B. 1/3, -1/6
+
+3.31.
+
+```c
+void switcher(long a, long b, long c, long *dest) {
+  long val;
+  switch (a) {
+  case 5: /* Case A */
+    c = 15^a;
+    /* Fall through */
+  case 0: /* Case B */
+    val = 112+c;
+    break;
+  case 2: /* Case C */
+  case 7: /* Case D */
+    val = (c+a)*4;
+    break;
+  case 4: /* Case E */
+    val = val;
+    break;
+  default:
+    val = a;
+  }
+  *dest = val;
+}
+```
+
+0 .L3 case b
+1 .L2 default
+2 .L5 case c/d
+3 .L2 default
+4 .L6 case e
+5 .L7 case a
+6 .L2 default
+7 .L5 case c/d
+
+Note: The books answers assume registers that don't align with the problem
+statement.
