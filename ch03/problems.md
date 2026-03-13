@@ -531,3 +531,66 @@ void switcher(long a, long b, long c, long *dest) {
 
 Note: The books answers assume registers that don't align with the problem
 statement.
+
+3.32.
+
+|         Instruction            |               State values (at beginning)                          |
+| Label | PC       | Instruction | %rdi | %rsi | %rax | %rsp           | *%rsp    | Description       |
+|-------|----------|-------------|------|------|------|----------------|----------|-------------------|
+| M1    | 0x400560 | callq       | 10   | -    | -    | 0x7fffffffe820 | -        | Call first(10)    |
+| F1    | 0x400548 | lea         | 10   | -    | -    | 0x7fffffffe818 | 0x400565 | x+1               |
+| F2    | 0x40054c | sub         | 10   | 11   | -    | 0x7fffffffe818 | 0x400565 | x-1               |
+| F3    | 0x400550 | callq       |  9   | 11   | -    | 0x7fffffffe818 | 0x400565 | Call last(x-1,x+1 |
+| L1    | 0x400540 | mov         |  9   | 11   | -    | 0x7fffffffe810 | 0x400555 | u                 |
+| L2    | 0x400543 | imul        |  9   | 11   |  9   | 0x7fffffffe810 | 0x400555 | u*v               |
+| L3    | 0x400547 | retq        |  9   | 11   | 99   | 0x7fffffffe810 | 0x400555 | return            |
+| F4    | 0x400555 | repz retq   |  9   | 11   | 99   | 0x7fffffffe818 | 0x400565 | return            |
+| M2    | 0x400565 | mov         |  9   | 11   | 99   | 0x7fffffffe820 | -        | resume            |
+
+3.33.
+
+edi a
+sil b
+rdx u
+rcx v
+
+a int
+b short
+u long *
+v char *
+
+3.34.
+
+A. a0-a5
+B. a6, a7
+C. There weren't enough to store them all.
+
+3.35.
+
+A. It stores the first arg, x.
+B.
+
+```c
+long rfun(unsigned long x) {
+  if (!x)
+    return 0;
+  unsigned long nx = x >> 2;
+  long rv = rfun(nx);
+  return x + rv;
+}
+```
+
+```asm
+rfun:
+  pushq %rbx         # save off rbx
+  movq  %rdi, %rbx   # put first arg into rbx
+  movl  $0, %eax     # put 0 into ret
+  testq %rdi, %rdi   # test first arg
+  je    .L2          # if it is zero goto .L2
+  shrq  $2, %rdi     # div first arg by 4 or shift right
+  call  rfun         # call rfun
+  addq  %rbx, %rax   # add result to original first arg value
+.L2:
+  popq  %rbx         # restore rbx
+  ret
+```
