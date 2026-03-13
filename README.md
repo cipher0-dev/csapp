@@ -83,7 +83,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Lecture 04: Floating Point
 - [x] Lecture 05: Machine-Level Programming I: Basics
 - [x] Lecture 06: Machine-Level Programming II: Control
-- [ ] Lecture 07: Machine-Level Programming III: Procedures
+- [x] Lecture 07: Machine-Level Programming III: Procedures
 - [ ] Lecture 08: Machine-Level Programming IV: Data
 - [ ] Lecture 09: Machine-Level Programming V: Advanced Topics
 - [ ] Lecture 10: Program Optimization
