@@ -64,7 +64,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 [Labs Repo][labs-repo]
 
 - [x] Data
-- [ ] Bomb
+- [x] Bomb
 - [ ] Attack
 - [ ] Buffer
 - [ ] Architecture
