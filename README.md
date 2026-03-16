@@ -85,7 +85,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Lecture 06: Machine-Level Programming II: Control
 - [x] Lecture 07: Machine-Level Programming III: Procedures
 - [x] Lecture 08: Machine-Level Programming IV: Data
-- [ ] Lecture 09: Machine-Level Programming V: Advanced Topics
+- [x] Lecture 09: Machine-Level Programming V: Advanced Topics
 - [ ] Lecture 10: Program Optimization
 - [ ] Lecture 11: The Memory Hierarchy
 - [ ] Lecture 12: Cache Memories
