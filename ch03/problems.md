@@ -594,3 +594,197 @@ rfun:
   popq  %rbx         # restore rbx
   ret
 ```
+
+3.36.
+
+| Array | Element size | Total size | Start address | Element i |
+|-------|--------------|------------|---------------|-----------|
+| P     | 4            | 20         | xp            | P + i * 4 |
+| Q     | 2            | 4          | xq            | Q + i * 2 |
+| R     | 8            | 72         | xr            | R + i * 8 |
+| S     | 8            | 80         | xs            | S + i * 8 |
+| T     | 8            | 16         | xt            | T + i * 8 |
+
+3.37.
+
+%rdx = (short *)P
+%rcx = (long)i
+
+| Expression   | Type    | Value            | Assembly code               |
+|--------------|---------|------------------|-----------------------------|
+| P[1]         | short   | *(P + 2)         | movw 2(%rdx),%ax            |
+| P + 3 + i    | short * | P + 6 + i*2      | leaq 6(P,%rcx,2),%rax       |
+| P[i * 6 - 5] | short   | *(P + i*12 - 10) | movw -10(%rdx,%rcx,12),%ax  |
+| P[2]         | short   | *(P + 4)         | movw 4(%rdx),%ax            |
+| &P[i + 2]    | short * | P + i*2 + 4      | leaq 4(%rdx,%rcx,2),%rax    |
+
+3.38.
+
+```c
+#define M 5
+#define N 7
+```
+
+```asm
+leaq 0(,%rdi,8), %rdx      # tmp1  = i*8
+subq %rdi, %rdx            # tmp1 -= i
+addq %rsi, %rdx            # tmp1 += j
+leaq (%rsi,%rsi,4), %rax   # tmp2 = j*5
+addq %rax, %rdi            # tmp3 = tmp2 + i
+movq Q(,%rdi,8), %rax      # ret  = *(Q + (tmp3*8)) -> Q + ((j*5+i)*8)
+addq P(,%rdx,8), %rax      # ret += *(P + (tmp1*8)) -> P + ((i*7+j)*8)
+```
+
+for P
+row size = N*8
+P[i][j] = P + i*N*8 + j
+
+for Q
+row size = M*8
+Q[j][i] = P + j*M*8 + i
+
+3.39. Skip
+3.40. Skip
+
+3.41.
+
+A. (assuming no alignment padding)
+
+p: 0
+s.x: 8
+s.y: 10
+next: 12
+
+B. 20
+C.
+
+```asm
+st_init:
+movl 8(%rdi), %eax  # ...
+movl %eax, 10(%rdi) # *(st+10) = *(st+8)
+leaq 10(%rdi), %rax # ...
+movq %rax, (%rdi)   # st->p = (st+10)
+movq %rdi, 12(%rdi) # st->next = st
+ret
+```
+
+```c
+void st_init(struct test *st) {
+    st->s.y = st->s.x;
+    st->p = &st->s.y;
+    st->next = st;
+}
+```
+
+3.42.
+
+A.
+
+```asm
+test:
+  movl $1, %eax       # ret = 1
+  jmp .L2             # goto .L2
+.L3:
+  imulq (%rdi), %rax  # ret *= ptr->v
+  movq 2(%rdi), %rdi  #
+.L2:
+  testq %rdi, %rdi    # if (ptr != NULL)
+  jne .L3             #   goto .L3
+  rep; ret
+```
+
+```c
+short test(struct ACE *ptr) {
+  short ret = 1;
+  while (ptr != NULL) {
+    ret *= ptr->v;
+    ptr = ptr->p;
+  }
+  return ret;
+}
+```
+
+B. This is a linked list, and test just multiplies all the elements of the list
+   together.
+
+3.43. Skip
+
+3.44.
+
+P1:
+  size/offset:
+    i: 2/0
+    c: 4/4
+    j: 8/8
+    d: 8/16
+  total size: 24
+  alginment: 8
+P2:
+  size/offset (alignment):
+    i: 8/0 (4)
+    c: 8/8 (1)
+    s: 8/16 (2)
+    j: 8/24 (8)
+  total size: 32
+  alginment: 8
+P3:
+  size/offset (alignment):
+    w: 16/0 (8)
+    c: 16/16 (8)
+  total size: 32
+  alginment: 8
+P4:
+  size/offset (alignment):
+    w: 16/0 (1)
+    c: 16/16 (8)
+  total size: 32
+  alginment: 8
+P5:
+  size/offset (alignment):
+    a: 64/0 (8)
+    t: 24/64 (8)
+  total size: 88
+  alginment: 8
+
+3.45.
+
+A.
+
+```c
+// size/offset/alignment
+struct {
+  int    *a; // 8/0/8
+  float  b;  // 4/8/4
+  char   c;  // 1/12/1
+  short  d;  // 2/14/2
+  long   e;  // 8/16/8
+  double f;  // 8/24/8
+  int    g;  // 4/32/4
+  char   *h; // 8/40/8
+} rec;
+```
+
+0123456789abcdef0123456789abcdef0123456789abcdef
+|.......|...|x|.|.......|.......|...xxxx|.......
+
+B. 48
+
+C. 42 (although in reality the size will be padded with another 6 bytes to make
+anything following it 8 byte aligned)
+
+```c
+// size/offset/alignment
+struct {
+  int    *a; // 8/0/8
+  long   e;  // 8/8/8
+  double f;  // 8/16/8
+  char   *h; // 8/24/8
+  float  b;  // 4/32/4
+  int    g;  // 4/36/4
+  short  d;  // 2/40/2
+  char   c;  // 1/42/1
+} rec;
+```
+
+0123456789abcdef0123456789abcdef0123456789abcdef
+|.......|.......|.......|.......|...|...|.|

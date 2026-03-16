@@ -36,8 +36,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 3.5 Arithmetic and Logical Operations
   - [x] 3.6 Control
   - [x] 3.7 Procedures
-  - [ ] 3.8 Array Allocation and Access
-  - [ ] 3.9 Heterogeneous Data Structures
+  - [x] 3.8 Array Allocation and Access
+  - [x] 3.9 Heterogeneous Data Structures
   - [ ] 3.10 Combining Control and Data in Machine-Level Programs
   - [ ] 3.11 Floating-Point Code
   - [ ] 3.12 Summary
