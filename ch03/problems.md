@@ -788,3 +788,45 @@ struct {
 
 0123456789abcdef0123456789abcdef0123456789abcdef
 |.......|.......|.......|.......|...|...|.|
+
+3.46.
+
+A.
+
+| 00 00 00 00 00 40 00 76 | Return address
+| 01 23 45 67 89 ab cd ef | %rbx of caller
+| ?? ?? ?? ?? ?? ?? ?? ?? | result
+| .. .. .. .. ?? ?? ?? ?? | buf with 4 bytes of padding, %rsp points to lsb
+
+B.
+
+| ?? ?? ?? ?? ?? 40 00 34 | Return address
+| 33 32 31 30 39 38 37 36 | %rbx of caller
+| 35 34 33 32 31 30 39 38 | result
+| 37 36 35 34 33 32 31 30 | buf with 4 bytes of padding, %rsp points to lsb
+
+C. 0x400034
+D. %rbx because it was saved on the stack
+E. The buffer is way too small for a practical application. malloc should
+   account for the null byte beign written and handle errors. strcpy does not
+   enforce an length, and while it will be the length of the string, it is
+   better to use strncpy.
+
+3.47. Skip
+
+3.48.
+
+A.
+
+buf: 0
+v: 24
+canary: none
+
+buf: 16
+v: 8
+canary: 40
+
+B. Putting the buffer closer to the canary after the locals prevents ascending
+   writes from overwriting the local values.
+
+3.49. Skip
