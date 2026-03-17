@@ -28,7 +28,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 2.3 Integer Arithmetic
   - [x] 2.4 Floating Point
   - [x] 2.5 Summary
-- [ ] Chapter 03 - Machine-Level Representation of Programs
+- [x] Chapter 03 - Machine-Level Representation of Programs
   - [x] 3.1 A Historical Perspective
   - [x] 3.2 Program Encodings
   - [x] 3.3 Data Formats
@@ -39,8 +39,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 3.8 Array Allocation and Access
   - [x] 3.9 Heterogeneous Data Structures
   - [x] 3.10 Combining Control and Data in Machine-Level Programs
-  - [ ] 3.11 Floating-Point Code
-  - [ ] 3.12 Summary
+  - [x] 3.11 Floating-Point Code
+  - [x] 3.12 Summary
 - [ ] Chapter 04 - Processor Architecture
 - [ ] Chapter 05 - Optimizing Program Performance
 - [ ] Chapter 06 - The Memory Hierarchy

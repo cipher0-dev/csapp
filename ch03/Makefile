@@ -2,7 +2,7 @@
 
 PROG_BINS := $(patsubst %.c,build/%,$(wildcard *.c))
 
-all: $(PROG_BINS) build/mstore.zig.s build/mstore.clang.s build/mstore.gcc.s build/mstore.o build/test_3_3.o build/test_3_11
+all: $(PROG_BINS) build/mstore.zig.s build/mstore.clang.s build/mstore.gcc.s build/mstore.o build/test_3_3.o build/test_3_11 build/test_3_51.o
 
 clean:
 	-rm -rf build 2>/dev/null
@@ -49,3 +49,12 @@ build/test_3_11.o: test_3_11.s
 build/test_3_11: build/test_3_11.o
 	mkdir -p $(@D)
 	ld $^ -o $@
+
+build/test_3_51:
+	mkdir -p $(@D)
+	# NOTE: commenting this target out since i just need the object code
+	touch $@
+
+build/test_3_51.o: test_3_51.c
+	mkdir -p $(@D)
+	zig cc -std=c23 -g -Og -fno-sanitize=undefined -c -o $@ $^

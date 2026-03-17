@@ -830,3 +830,38 @@ B. Putting the buffer closer to the canary after the locals prevents ascending
    writes from overwriting the local values.
 
 3.49. Skip
+
+3.50.
+
+val1: d
+val2: i
+val3: l
+val4: f
+
+3.51.
+
+| Tx     | Ty     | Instruction(s)         |
+|--------|--------|------------------------|
+| long   | double | vcvtsi2sdq %rdi, %xmm0 |
+| double | int    | vcvttsd2si %xmm0,%eax  |
+| double | float  | vcvtsd2ss %xmm0,%xmm0  |
+| long   | float  | vcvtsi2ssq %rdi,%xmm0  |
+| float  | long   | vcvttss2si %xmm0,%rax  |
+
+3.52.
+
+A. xmm0, rdi, xmm1, esi
+B. edi, rsi, rdx, rcx
+C. rdi, xmm0, esi, xmm1
+D. xmm0, rdi, xmm1, xmm2
+
+3.53. Skip
+3.54. Skip
+3.55. Skip, this is just mapping those bits onto a float and computing the value
+3.56.
+
+A. return x & c;
+B. return 0;
+C. retrun x | c; // signed neg value
+
+3.57. Skip
