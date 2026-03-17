@@ -55,8 +55,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 
 - [x] DATA:TMIN
 - [x] DATA:BOOL
-- [ ] DATA:TNEG Skip
-- [ ] ASM:I32
+- [ ] DATA:TNEG - Skip
+- [x] ASM:I32 - Read but didn't do the practice problems
 - [ ] ASM:EASM
 
 ## Labs
