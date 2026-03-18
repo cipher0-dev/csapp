@@ -41,23 +41,58 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 3.10 Combining Control and Data in Machine-Level Programs
   - [x] 3.11 Floating-Point Code
   - [x] 3.12 Summary
-- [ ] Chapter 04 - Processor Architecture
+- [ ] Chapter 04 - Processor Architecture - _Skip_
 - [ ] Chapter 05 - Optimizing Program Performance
+  - [ ] 5.1 Capabilities and Limitations of Optimizing Compilers
+  - [ ] 5.2 Expressing Program Performance
+  - [ ] 5.3 Program Example
+  - [ ] 5.4 Eliminating Loop Inefficiencies
+  - [ ] 5.5 Reducing Procedure Calls
+  - [ ] 5.6 Eliminating Unneeded Memory References
+  - [ ] 5.7 Understanding Modern Processors
+    - [ ] 5.7.1 Overall Operation
+    - [ ] 5.7.2 Functional Unit Performance
+    - [ ] 5.7.3 An Abstract Model of Processor Operation
+  - [ ] 5.8 Loop Unrolling
+  - [ ] 5.9 Enhancing Parallelism
+    - [ ] 5.9.1 Multiple Accumulators
+    - [ ] 5.9.2 Reassociation Transformation
+  - [ ] 5.10 Summary of Results for Optimizing Combining Code
+  - [ ] 5.11 Some Limiting Factors
+    - [ ] 5.11.1 Register Spilling
+    - [ ] 5.11.2 Branch Prediction and Misprediction Penalties
+  - [ ] 5.12 Understanding Memory Performance
+    - [ ] 5.12.1 Load PerformanceS
+    - [ ] 5.12.2 Store Performance
+  - [ ] 5.13 Life in the Real World: Performance Improvement Techniques 
+  - [ ] 5.14 Identifying and Eliminating Performance Bottlenecks
+    - [ ] 5.14.1 Program Profiling
+    - [ ] 5.14.2 Using a Profiler to Guide Optimization
+  - [ ] 5.15 Summary
 - [ ] Chapter 06 - The Memory Hierarchy
 - [ ] Chapter 07 - Linking
 - [ ] Chapter 08 - Exceptional Control Flow
 - [ ] Chapter 09 - Virtual Memory
-- [ ] Chapter 10 - System-Level I/O
-- [ ] Chapter 11 - Network Programming
+- [ ] Chapter 10 - System-Level I/O - _Skip_
+- [ ] Chapter 11 - Network Programming - _Skip_
 - [ ] Chapter 12 - Concurrent Programming
 
 ## Web Asides
 
-- [x] DATA:TMIN
-- [x] DATA:BOOL
-- [ ] DATA:TNEG - Skip
-- [x] ASM:I32 - Read but didn't do the practice problems
-- [ ] ASM:EASM
+- Chapter 02:
+  - [x] DATA:TMIN
+  - [x] DATA:BOOL
+  - [ ] DATA:TNEG - _Skip_
+- Chapter 03:
+  - [x] ASM:I32 - Read but didn't do the practice problems
+  - [ ] ASM:EASM
+- Chapter 04:
+  - [ ] ARCH:VLOG — _Skip_
+  - [ ] ARCH:HCL — _Skip_
+- Chapter 05:
+  - [ ] OPT:SIMD
+- Chapter 06:
+  - [ ] MEM:BLOCKING
 
 ## Labs
 
@@ -86,7 +121,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Lecture 07: Machine-Level Programming III: Procedures
 - [x] Lecture 08: Machine-Level Programming IV: Data
 - [x] Lecture 09: Machine-Level Programming V: Advanced Topics
-- [ ] Lecture 10: Program Optimization
+- [x] Lecture 10: Program Optimization
 - [ ] Lecture 11: The Memory Hierarchy
 - [ ] Lecture 12: Cache Memories
 - [ ] Lecture 13: Linking
