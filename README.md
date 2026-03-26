@@ -141,8 +141,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [ ] Lecture 27: Future of Computing
 - [x] Recitation 03: Datalab and Data Representations
 - [x] Recitation 04: Bomb Lab
-- [ ] Recitation 05: Attack Lab and Stacks
-- [ ] Recitation 06: C Review
+- [x] Recitation 05: Attack Lab and Stacks
+- [x] Recitation 06: C Review
 - [ ] Recitation 07: Cache Lab and Blocking
 - [ ] Recitation 08: Exam Review
 - [ ] Recitation 09: Shell Lab, Processes, and Signals, and I/O
