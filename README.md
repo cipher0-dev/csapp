@@ -43,12 +43,12 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 3.12 Summary
 - [ ] Chapter 04 - Processor Architecture - _Skip_
 - [ ] Chapter 05 - Optimizing Program Performance
-  - [ ] 5.1 Capabilities and Limitations of Optimizing Compilers
-  - [ ] 5.2 Expressing Program Performance
-  - [ ] 5.3 Program Example
-  - [ ] 5.4 Eliminating Loop Inefficiencies
-  - [ ] 5.5 Reducing Procedure Calls
-  - [ ] 5.6 Eliminating Unneeded Memory References
+  - [x] 5.1 Capabilities and Limitations of Optimizing Compilers
+  - [x] 5.2 Expressing Program Performance
+  - [x] 5.3 Program Example
+  - [x] 5.4 Eliminating Loop Inefficiencies
+  - [x] 5.5 Reducing Procedure Calls
+  - [x] 5.6 Eliminating Unneeded Memory References
   - [ ] 5.7 Understanding Modern Processors
     - [ ] 5.7.1 Overall Operation
     - [ ] 5.7.2 Functional Unit Performance
