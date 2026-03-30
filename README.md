@@ -49,11 +49,11 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 5.4 Eliminating Loop Inefficiencies
   - [x] 5.5 Reducing Procedure Calls
   - [x] 5.6 Eliminating Unneeded Memory References
-  - [ ] 5.7 Understanding Modern Processors
-    - [ ] 5.7.1 Overall Operation
-    - [ ] 5.7.2 Functional Unit Performance
-    - [ ] 5.7.3 An Abstract Model of Processor Operation
-  - [ ] 5.8 Loop Unrolling
+  - [x] 5.7 Understanding Modern Processors
+    - [x] 5.7.1 Overall Operation
+    - [x] 5.7.2 Functional Unit Performance
+    - [x] 5.7.3 An Abstract Model of Processor Operation
+  - [x] 5.8 Loop Unrolling
   - [ ] 5.9 Enhancing Parallelism
     - [ ] 5.9.1 Multiple Accumulators
     - [ ] 5.9.2 Reassociation Transformation

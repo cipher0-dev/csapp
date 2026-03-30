@@ -21,3 +21,7 @@ B. Yes, because it is writen out to memory at the end of every iteration
 C. Because the register state gets written out to memory at the end of every
    iteration, the two stay in sync, and the appropriate vaule is read later by
    indexing against data.
+
+5.5. Skip
+5.6. Skip
+5.7. Skip
