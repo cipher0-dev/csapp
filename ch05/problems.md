@@ -25,3 +25,31 @@ C. Because the register state gets written out to memory at the end of every
 5.5. Skip
 5.6. Skip
 5.7. Skip
+5.8. Skip
+
+5.9.
+
+```
+void merge(long src1[], long src2[], long dest[], long n) {
+  long i1 = 0;
+  long i2 = 0;
+  long id = 0;
+  while (i1 < n && i2 < n) {
+    long x = src1[i1];
+    long y = src2[i2];
+    bool cond = x < y;
+
+    dest[id++] = cond ? x : y;
+    i1 += cond;
+    i2 += 1-cond;
+  }
+  while (i1 < n)
+    dest[id++] = src1[i1++];
+  while (i2 < n)
+    dest[id++] = src2[i2++];
+}
+```
+
+5.10. Skip
+5.11. Skip
+5.12. Skip
