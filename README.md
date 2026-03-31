@@ -70,11 +70,11 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
     - [x] 5.14.2 Using a Profiler to Guide Optimization
   - [x] 5.15 Summary
 - [ ] Chapter 06 - The Memory Hierarchy
-  - [ ] 6.1 Storage Technologies
-    - [ ] 6.1.1 Random Access Memory
-    - [ ] 6.1.2 Disk Storage
-    - [ ] 6.1.3 Solid State Disks
-    - [ ] 6.1.4 Storage Technology Trends
+  - [x] 6.1 Storage Technologies
+    - [x] 6.1.1 Random Access Memory
+    - [x] 6.1.2 Disk Storage
+    - [x] 6.1.3 Solid State Disks
+    - [x] 6.1.4 Storage Technology Trends
   - [ ] 6.2 Locality
     - [ ] 6.2.1 Locality of References to Program Data
     - [ ] 6.2.2 Locality of Instruction Fetches
