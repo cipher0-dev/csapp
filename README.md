@@ -64,12 +64,12 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 5.12 Understanding Memory Performance
     - [x] 5.12.1 Load PerformanceS
     - [x] 5.12.2 Store Performance
-  - [x] 5.13 Life in the Real World: Performance Improvement Techniques 
+  - [x] 5.13 Life in the Real World: Performance Improvement Techniques
   - [x] 5.14 Identifying and Eliminating Performance Bottlenecks
     - [x] 5.14.1 Program Profiling
     - [x] 5.14.2 Using a Profiler to Guide Optimization
   - [x] 5.15 Summary
-- [ ] Chapter 06 - The Memory Hierarchy
+- [x] Chapter 06 - The Memory Hierarchy
   - [x] 6.1 Storage Technologies
     - [x] 6.1.1 Random Access Memory
     - [x] 6.1.2 Disk Storage
@@ -82,21 +82,44 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 6.3 The Memory Hierarchy
     - [x] 6.3.1 Caching in the Memory Hierarchy
     - [x] 6.3.2 Summary of Memory Hierarchy Concepts
-  - [ ] 6.4 Cache Memories
-    - [ ] 6.4.1 Generic Cache Memory Organization
-    - [ ] 6.4.2 Direct-Mapped Caches
-    - [ ] 6.4.3 Set Associative Caches
-    - [ ] 6.4.4 Fully Associative Caches
-    - [ ] 6.4.5 Issues with Writes
-    - [ ] 6.4.6 Anatomy of a Real Cache Hierarchy
-    - [ ] 6.4.7 Performance Impact of Cache Parameters
-  - [ ] 6.5 Writing Cache-Friendly Code
-  - [ ] 6.6 Putting It Together: The Impact of Caches on Program Performance
-    - [ ] 6.6.1 The Memory Mountain
-    - [ ] 6.6.2 Rearranging Loops to Increase Spatial Locality
-    - [ ] 6.6.3 Exploiting Locality in Your Programs
-  - [ ] 6.7 Summary
+  - [x] 6.4 Cache Memories
+    - [x] 6.4.1 Generic Cache Memory Organization
+    - [x] 6.4.2 Direct-Mapped Caches
+    - [x] 6.4.3 Set Associative Caches
+    - [x] 6.4.4 Fully Associative Caches
+    - [x] 6.4.5 Issues with Writes
+    - [x] 6.4.6 Anatomy of a Real Cache Hierarchy
+    - [x] 6.4.7 Performance Impact of Cache Parameters
+  - [x] 6.5 Writing Cache-Friendly Code
+  - [x] 6.6 Putting It Together: The Impact of Caches on Program Performance
+    - [x] 6.6.1 The Memory Mountain
+    - [x] 6.6.2 Rearranging Loops to Increase Spatial Locality
+    - [x] 6.6.3 Exploiting Locality in Your Programs
+  - [x] 6.7 Summary
 - [ ] Chapter 07 - Linking
+  - [ ] 7.1 Compiler Drivers
+  - [ ] 7.2 Static Linking
+  - [ ] 7.3 Object Files
+  - [ ] 7.4 Relocatable Object Files
+  - [ ] 7.5 Symbols and Symbol Tables
+  - [ ] 7.6 Symbol Resolution
+    - [ ] 7.6.1 How Linkers Resolve Duplicate Symbol Names
+    - [ ] 7.6.2 Linking with Static Libraries
+    - [ ] 7.6.3 How Linkers Use Static Libraries to Resolve References
+  - [ ] 7.7 Relocation
+    - [ ] 7.7.1 Relocation Entries
+    - [ ] 7.7.2 Relocating Symbol References
+  - [ ] 7.8 Executable Object Files
+  - [ ] 7.9 Loading Executable Object Files
+  - [ ] 7.10 Dynamic Linking with Shared Libraries
+  - [ ] 7.11 Loading and Linking Shared Libraries from Applications
+  - [ ] 7.12 Position-Independent Code (PIC)
+  - [ ] 7.13 Library Interpositioning
+    - [ ] 7.13.1 Compile-Time Interpositioning
+    - [ ] 7.13.2 Link-Time Interpositioning
+    - [ ] 7.13.3 Run-Time Interpositioning
+  - [ ] 7.14 Tools for Manipulating Object Files
+  - [ ] 7.15 Summary
 - [ ] Chapter 08 - Exceptional Control Flow
 - [ ] Chapter 09 - Virtual Memory
 - [ ] Chapter 10 - System-Level I/O - _Skip_
@@ -108,17 +131,17 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - Chapter 02:
   - [x] DATA:TMIN
   - [x] DATA:BOOL
-  - [ ] DATA:TNEG - _Skip_
+  - [ ] ~DATA:TNEG~ - _Skip_
 - Chapter 03:
   - [x] ASM:I32 - Read but didn't do the practice problems
-  - [ ] ASM:EASM
+  - [ ] ASM:EASM - TODO
 - Chapter 04:
-  - [ ] ARCH:VLOG — _Skip_
-  - [ ] ARCH:HCL — _Skip_
+  - [ ] ~ARCH:VLOG~ — _Skip_
+  - [ ] ~ARCH:HCL~ — _Skip_
 - Chapter 05:
   - [x] OPT:SIMD - Read but didn't do the practice problems
 - Chapter 06:
-  - [ ] MEM:BLOCKING
+  - [ ] MEM:BLOCKING - TODO
 
 ## Labs
 
@@ -126,12 +149,11 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 
 - [x] Data
 - [x] Bomb
-- [ ] Attack
-- [ ] Buffer
-- [ ] Architecture
+- [x] Attack
+- [ ] Buffer - Need to find
+- [ ] Architecture - Need to find
 - [ ] Cache
-- [ ] Malloc (checkpoint)
-- [ ] Malloc (final)
+- [ ] Malloc
 - [ ] Performance
 - [ ] Shell
 - [ ] Proxy
@@ -149,7 +171,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Lecture 09: Machine-Level Programming V: Advanced Topics
 - [x] Lecture 10: Program Optimization
 - [x] Lecture 11: The Memory Hierarchy
-- [ ] Lecture 12: Cache Memories
+- [x] Lecture 12: Cache Memories
 - [ ] Lecture 13: Linking
 - [ ] Lecture 14: Exceptional Control Flow: Exceptions and Processes
 - [ ] Lecture 15: Exceptional Control Flow: Signals and Nonlocal Jumps
@@ -169,7 +191,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Recitation 04: Bomb Lab
 - [x] Recitation 05: Attack Lab and Stacks
 - [x] Recitation 06: C Review
-- [ ] Recitation 07: Cache Lab and Blocking
+- [x] Recitation 07: Cache Lab and Blocking
 - [ ] Recitation 08: Exam Review
 - [ ] Recitation 09: Shell Lab, Processes, and Signals, and I/O
 - [ ] Recitation 10: Virtual Memory
