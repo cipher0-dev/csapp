@@ -75,14 +75,14 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
     - [x] 6.1.2 Disk Storage
     - [x] 6.1.3 Solid State Disks
     - [x] 6.1.4 Storage Technology Trends
-  - [ ] 6.2 Locality
-    - [ ] 6.2.1 Locality of References to Program Data
-    - [ ] 6.2.2 Locality of Instruction Fetches
-    - [ ] 6.2.3 Summary of Locality
-  - [ ] 6.3
-    - [ ] 6.3.1 Caching in the Memory Hierarchy
-    - [ ] 6.3.2 Summary of Memory Hierarchy Concepts
-  - [ ] 6.4
+  - [x] 6.2 Locality
+    - [x] 6.2.1 Locality of References to Program Data
+    - [x] 6.2.2 Locality of Instruction Fetches
+    - [x] 6.2.3 Summary of Locality
+  - [x] 6.3 The Memory Hierarchy
+    - [x] 6.3.1 Caching in the Memory Hierarchy
+    - [x] 6.3.2 Summary of Memory Hierarchy Concepts
+  - [ ] 6.4 Cache Memories
     - [ ] 6.4.1 Generic Cache Memory Organization
     - [ ] 6.4.2 Direct-Mapped Caches
     - [ ] 6.4.3 Set Associative Caches
