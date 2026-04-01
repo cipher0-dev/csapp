@@ -96,31 +96,60 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
     - [x] 6.6.2 Rearranging Loops to Increase Spatial Locality
     - [x] 6.6.3 Exploiting Locality in Your Programs
   - [x] 6.7 Summary
-- [ ] Chapter 07 - Linking
-  - [ ] 7.1 Compiler Drivers
-  - [ ] 7.2 Static Linking
-  - [ ] 7.3 Object Files
-  - [ ] 7.4 Relocatable Object Files
-  - [ ] 7.5 Symbols and Symbol Tables
-  - [ ] 7.6 Symbol Resolution
-    - [ ] 7.6.1 How Linkers Resolve Duplicate Symbol Names
-    - [ ] 7.6.2 Linking with Static Libraries
-    - [ ] 7.6.3 How Linkers Use Static Libraries to Resolve References
-  - [ ] 7.7 Relocation
-    - [ ] 7.7.1 Relocation Entries
-    - [ ] 7.7.2 Relocating Symbol References
-  - [ ] 7.8 Executable Object Files
-  - [ ] 7.9 Loading Executable Object Files
-  - [ ] 7.10 Dynamic Linking with Shared Libraries
-  - [ ] 7.11 Loading and Linking Shared Libraries from Applications
-  - [ ] 7.12 Position-Independent Code (PIC)
-  - [ ] 7.13 Library Interpositioning
-    - [ ] 7.13.1 Compile-Time Interpositioning
-    - [ ] 7.13.2 Link-Time Interpositioning
-    - [ ] 7.13.3 Run-Time Interpositioning
-  - [ ] 7.14 Tools for Manipulating Object Files
-  - [ ] 7.15 Summary
+- [x] Chapter 07 - Linking
+  - [x] 7.1 Compiler Drivers
+  - [x] 7.2 Static Linking
+  - [x] 7.3 Object Files
+  - [x] 7.4 Relocatable Object Files
+  - [x] 7.5 Symbols and Symbol Tables
+  - [x] 7.6 Symbol Resolution
+    - [x] 7.6.1 How Linkers Resolve Duplicate Symbol Names
+    - [x] 7.6.2 Linking with Static Libraries
+    - [x] 7.6.3 How Linkers Use Static Libraries to Resolve References
+  - [x] 7.7 Relocation
+    - [x] 7.7.1 Relocation Entries
+    - [x] 7.7.2 Relocating Symbol References
+  - [x] 7.8 Executable Object Files
+  - [x] 7.9 Loading Executable Object Files
+  - [x] 7.10 Dynamic Linking with Shared Libraries
+  - [x] 7.11 Loading and Linking Shared Libraries from Applications
+  - [x] 7.12 Position-Independent Code (PIC)
+  - [x] 7.13 Library Interpositioning
+    - [x] 7.13.1 Compile-Time Interpositioning
+    - [x] 7.13.2 Link-Time Interpositioning
+    - [x] 7.13.3 Run-Time Interpositioning
+  - [x] 7.14 Tools for Manipulating Object Files
+  - [x] 7.15 Summary
 - [ ] Chapter 08 - Exceptional Control Flow
+  - [ ] 8.1 Exceptions
+    - [ ] 8.1.1 Exception Handling
+    - [ ] 8.1.2 Classes of Exceptions
+    - [ ] 8.1.3 Exceptions in Linux/x86-64 Systems
+  - [ ] 8.2 Processes
+    - [ ] 8.2.1 Logical Control Flow
+    - [ ] 8.2.2 Concurrent Flows
+    - [ ] 8.2.3 Private Address Space
+    - [ ] 8.2.4 User and Kernel Modes
+    - [ ] 8.2.5 Context Switches
+  - [ ] 8.3 System Call Error Handling
+  - [ ] 8.4 Process Control
+    - [ ] 8.4.1 Obtaining Process IDs
+    - [ ] 8.4.2 Creating and Terminating Processes
+    - [ ] 8.4.3 Reaping Child Processes
+    - [ ] 8.4.4 Putting Processes to Sleep
+    - [ ] 8.4.5 Loading and Running Programs
+    - [ ] 8.4.6 Using fork and execve to Run Programs
+  - [ ] 8.5 Signals
+    - [ ] 8.5.1 Signal Terminology
+    - [ ] 8.5.2 Sending Signals
+    - [ ] 8.5.3 Receiving Signals
+    - [ ] 8.5.4 Blocking and Unblocking Signals
+    - [ ] 8.5.5 Writing Signal Handlers
+    - [ ] 8.5.6 Synchronizing Flows to Avoid Nasty Concurrency Bugs
+    - [ ] 8.5.7 Explicitly Waiting for Signals
+  - [ ] 8.6 Nonlocal Jumps
+  - [ ] 8.7 Tools for Manipulating Processes
+  - [ ] 8.8 Summary
 - [ ] Chapter 09 - Virtual Memory
 - [ ] Chapter 10 - System-Level I/O - _Skip_
 - [ ] Chapter 11 - Network Programming - _Skip_
@@ -172,7 +201,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Lecture 10: Program Optimization
 - [x] Lecture 11: The Memory Hierarchy
 - [x] Lecture 12: Cache Memories
-- [ ] Lecture 13: Linking
+- [x] Lecture 13: Linking
 - [ ] Lecture 14: Exceptional Control Flow: Exceptions and Processes
 - [ ] Lecture 15: Exceptional Control Flow: Signals and Nonlocal Jumps
 - [ ] Lecture 16: System Level I/O
@@ -180,7 +209,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [ ] Lecture 18: Virtual Memory: Systems
 - [ ] Lecture 19: Dynamic Memory Allocation: Basic Concepts
 - [ ] Lecture 20: Dynamic Memory Allocation: Advanced Concepts
-- [ ] Lecture 21: Network Programming: Part 1
+- [ ] Lecture 21: Network Programming: Part I
 - [ ] Lecture 22: Network Programming: Part II
 - [ ] Lecture 23: Concurrent Programming
 - [ ] Lecture 24: Synchronization: Basics
