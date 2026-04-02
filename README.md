@@ -41,7 +41,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 3.10 Combining Control and Data in Machine-Level Programs
   - [x] 3.11 Floating-Point Code
   - [x] 3.12 Summary
-- [ ] Chapter 04 - Processor Architecture - _Skip_
+- [-] ~Chapter 04 - Processor Architecture~ - _Skip_ Not relavent to my learning objectives
 - [x] Chapter 05 - Optimizing Program Performance
   - [x] 5.1 Capabilities and Limitations of Optimizing Compilers
   - [x] 5.2 Expressing Program Performance
@@ -151,9 +151,12 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [ ] 8.7 Tools for Manipulating Processes
   - [ ] 8.8 Summary
 - [ ] Chapter 09 - Virtual Memory
-- [ ] Chapter 10 - System-Level I/O - _Skip_
-- [ ] Chapter 11 - Network Programming - _Skip_
-- [ ] Chapter 12 - Concurrent Programming
+- [ ] ~Chapter 10 - System-Level I/O~ - _Skip_ TLPI covered this in depth
+- [ ] ~Chapter 11 - Network Programming~ - _Skip_ TLPI covered this in depth,
+      and I have a lot of experience already
+- [ ] ~Chapter 12 - Concurrent Programming~ - _Skip_ I have a lot of experience
+      already and have a book scheduled later this year that will go into more
+      depth than this
 
 ## Web Asides
 
@@ -165,8 +168,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] ASM:I32 - Read but didn't do the practice problems
   - [ ] ASM:EASM - TODO
 - Chapter 04:
-  - [ ] ~ARCH:VLOG~ — _Skip_
-  - [ ] ~ARCH:HCL~ — _Skip_
+  - [ ] ~ARCH:VLOG~ — _Skip_ Not relavent to my learning objectives
+  - [ ] ~ARCH:HCL~ — _Skip_ Not relavent to my learning objectives
 - Chapter 05:
   - [x] OPT:SIMD - Read but didn't do the practice problems
 - Chapter 06:
@@ -179,11 +182,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Data
 - [x] Bomb
 - [x] Attack
-- [ ] Buffer - Need to find
-- [ ] Architecture - Need to find
 - [ ] Cache
 - [ ] Malloc
-- [ ] Performance
 - [ ] Shell
 - [ ] Proxy
 
