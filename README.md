@@ -120,36 +120,29 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
     - [x] 7.13.3 Run-Time Interpositioning
   - [x] 7.14 Tools for Manipulating Object Files
   - [x] 7.15 Summary
-- [ ] Chapter 08 - Exceptional Control Flow
-  - [ ] 8.1 Exceptions
-    - [ ] 8.1.1 Exception Handling
-    - [ ] 8.1.2 Classes of Exceptions
-    - [ ] 8.1.3 Exceptions in Linux/x86-64 Systems
-  - [ ] 8.2 Processes
-    - [ ] 8.2.1 Logical Control Flow
-    - [ ] 8.2.2 Concurrent Flows
-    - [ ] 8.2.3 Private Address Space
-    - [ ] 8.2.4 User and Kernel Modes
-    - [ ] 8.2.5 Context Switches
-  - [ ] 8.3 System Call Error Handling
-  - [ ] 8.4 Process Control
-    - [ ] 8.4.1 Obtaining Process IDs
-    - [ ] 8.4.2 Creating and Terminating Processes
-    - [ ] 8.4.3 Reaping Child Processes
-    - [ ] 8.4.4 Putting Processes to Sleep
-    - [ ] 8.4.5 Loading and Running Programs
-    - [ ] 8.4.6 Using fork and execve to Run Programs
-  - [ ] 8.5 Signals
-    - [ ] 8.5.1 Signal Terminology
-    - [ ] 8.5.2 Sending Signals
-    - [ ] 8.5.3 Receiving Signals
-    - [ ] 8.5.4 Blocking and Unblocking Signals
-    - [ ] 8.5.5 Writing Signal Handlers
-    - [ ] 8.5.6 Synchronizing Flows to Avoid Nasty Concurrency Bugs
-    - [ ] 8.5.7 Explicitly Waiting for Signals
-  - [ ] 8.6 Nonlocal Jumps
-  - [ ] 8.7 Tools for Manipulating Processes
-  - [ ] 8.8 Summary
+- [x] Chapter 08 - Exceptional Control Flow
+  - [x] 8.1 Exceptions
+    - [x] 8.1.1 Exception Handling
+    - [x] 8.1.2 Classes of Exceptions
+    - [x] 8.1.3 Exceptions in Linux/x86-64 Systems
+  - [x] 8.2 Processes
+    - [x] 8.2.1 Logical Control Flow
+    - [x] 8.2.2 Concurrent Flows
+    - [x] 8.2.3 Private Address Space
+    - [x] 8.2.4 User and Kernel Modes
+    - [x] 8.2.5 Context Switches
+  - [x] 8.3 System Call Error Handling
+  - [x] 8.4 Process Control
+    - [x] 8.4.1 Obtaining Process IDs
+    - [x] 8.4.2 Creating and Terminating Processes
+    - [x] 8.4.3 Reaping Child Processes
+    - [x] 8.4.4 Putting Processes to Sleep
+    - [x] 8.4.5 Loading and Running Programs
+    - [x] 8.4.6 Using fork and execve to Run Programs
+  - [ ] ~8.5 Signals~ - _Skip_ TLPI covered this in depth
+  - [x] 8.6 Nonlocal Jumps
+  - [x] 8.7 Tools for Manipulating Processes
+  - [x] 8.8 Summary
 - [ ] Chapter 09 - Virtual Memory
 - [ ] ~Chapter 10 - System-Level I/O~ - _Skip_ TLPI covered this in depth
 - [ ] ~Chapter 11 - Network Programming~ - _Skip_ TLPI covered this in depth,
@@ -166,14 +159,14 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [ ] ~DATA:TNEG~ - _Skip_
 - Chapter 03:
   - [x] ASM:I32 - Read but didn't do the practice problems
-  - [ ] ASM:EASM - TODO
+  - [ ] ASM:EASM
 - Chapter 04:
   - [ ] ~ARCH:VLOG~ — _Skip_ Not relavent to my learning objectives
   - [ ] ~ARCH:HCL~ — _Skip_ Not relavent to my learning objectives
 - Chapter 05:
   - [x] OPT:SIMD - Read but didn't do the practice problems
 - Chapter 06:
-  - [ ] MEM:BLOCKING - TODO
+  - [ ] MEM:BLOCKING
 
 ## Labs
 
@@ -202,8 +195,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Lecture 11: The Memory Hierarchy
 - [x] Lecture 12: Cache Memories
 - [x] Lecture 13: Linking
-- [ ] Lecture 14: Exceptional Control Flow: Exceptions and Processes
-- [ ] Lecture 15: Exceptional Control Flow: Signals and Nonlocal Jumps
+- [x] Lecture 14: Exceptional Control Flow: Exceptions and Processes
+- [x] Lecture 15: Exceptional Control Flow: Signals and Nonlocal Jumps
 - [ ] Lecture 16: System Level I/O
 - [ ] Lecture 17: Virtual Memory: Concepts
 - [ ] Lecture 18: Virtual Memory: Systems
@@ -221,7 +214,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Recitation 05: Attack Lab and Stacks
 - [x] Recitation 06: C Review
 - [x] Recitation 07: Cache Lab and Blocking
-- [ ] Recitation 08: Exam Review
+- [x] Recitation 08: Exam Review
 - [ ] Recitation 09: Shell Lab, Processes, and Signals, and I/O
 - [ ] Recitation 10: Virtual Memory
 - [ ] Recitation 11: Malloc Lab
