@@ -182,7 +182,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Data
 - [x] Bomb
 - [x] Attack
-- [ ] Cache
+- [x] Cache
 - [ ] Malloc
 - [ ] Shell
 - [ ] Proxy
