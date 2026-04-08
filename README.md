@@ -144,6 +144,61 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 8.7 Tools for Manipulating Processes
   - [x] 8.8 Summary
 - [ ] Chapter 09 - Virtual Memory
+  - [x] 9.1 Physical and Virtual Addressing
+  - [x] 9.2 Address Spaces
+  - [ ] 9.3 VM as a Tool for Caching
+    - [x] 9.3.1 DRAM Cache Organization
+    - [x] 9.3.2 Page Tables
+    - [ ] 9.3.3 Page Hits
+    - [ ] 9.3.4 Page Faults
+    - [ ] 9.3.5 Allocating Pages
+    - [ ] 9.3.6 Locality to the Rescue Again
+  - [ ] 9.4 VM as a Tool for Memory Management
+  - [ ] 9.5 VM as a Tool for Memory Protection
+  - [ ] 9.6 Address Translation
+    - [ ] 9.6.1 Integrating Caches and VM
+    - [ ] 9.6.2 Speeding Up Address Translation with a TLB
+    - [ ] 9.6.3 Multi-Level Page Tables
+    - [ ] 9.6.4 Putting It Together: End-to-End Address Translation
+  - [ ] 9.7 Case Study: The Intel Core i7/Linux Memory System
+    - [ ] 9.7.1 Core i7 Address Translation
+    - [ ] 9.7.2 Linux Virtual Memory System
+  - [ ] 9.8 Memory Mapping
+    - [ ] 9.8.1 Shared Objects Revisited
+    - [ ] 9.8.2 The fork Function Revisited
+    - [ ] 9.8.3 The execve Function Revisited
+    - [ ] 9.8.4 User-Level Memory Mapping with the mmap Function
+  - [ ] 9.9 Dynamic Memory Allocation
+    - [ ] 9.9.1 The malloc and free Functions
+    - [ ] 9.9.2 Why Dynamic Memory Allocation?
+    - [ ] 9.9.3 Allocator Requirements and Goals
+    - [ ] 9.9.4 Fragmentation
+    - [ ] 9.9.5 Implementation Issues
+    - [ ] 9.9.6 Implicit Free Lists
+    - [ ] 9.9.7 Placing Allocated Blocks
+    - [ ] 9.9.8 Splitting Free Blocks
+    - [ ] 9.9.9 Getting Additional Heap Memory
+    - [ ] 9.9.10 Coalescing Free Blocks
+    - [ ] 9.9.11 Coalescing with Boundary Tags
+    - [ ] 9.9.12 Putting It Together: Implementing a Simple Allocator
+    - [ ] 9.9.13 Explicit Free Lists
+    - [ ] 9.9.14 Segregated Free Lists
+  - [ ] 9.10 Garbage Collection
+    - [ ] 9.10.1 Garbage Collector Basics
+    - [ ] 9.10.2 Mark&Sweep Garbage Collectors
+    - [ ] 9.10.3 Conservative Mark&Sweep for C Programs
+  - [ ] 9.11 Common Memory-Related Bugs in C Programs
+    - [ ] 9.11.1 Dereferencing Bad Pointers
+    - [ ] 9.11.2 Reading Uninitialized Memory
+    - [ ] 9.11.3 Allowing Stack Buffer Overflows
+    - [ ] 9.11.4 Assuming That Pointers and the Objects They Point to Are the Same Size
+    - [ ] 9.11.5 Making Off-by-One Errors
+    - [ ] 9.11.6 Referencing a Pointer Instead of the Object It Points To
+    - [ ] 9.11.7 Misunderstanding Pointer Arithmetic
+    - [ ] 9.11.8 Referencing Nonexistent Variables
+    - [ ] 9.11.9 Referencing Data in Free Heap Blocks
+    - [ ] 9.11.10 Introducing Memory Leaks
+  - [ ] 9.12 Summary
 - [ ] ~Chapter 10 - System-Level I/O~ - _Skip_ TLPI covered this in depth
 - [ ] ~Chapter 11 - Network Programming~ - _Skip_ TLPI covered this in depth,
       and I have a lot of experience already
@@ -197,8 +252,8 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Lecture 13: Linking
 - [x] Lecture 14: Exceptional Control Flow: Exceptions and Processes
 - [x] Lecture 15: Exceptional Control Flow: Signals and Nonlocal Jumps
-- [ ] Lecture 16: System Level I/O
-- [ ] Lecture 17: Virtual Memory: Concepts
+- [x] Lecture 16: System Level I/O
+- [x] Lecture 17: Virtual Memory: Concepts
 - [ ] Lecture 18: Virtual Memory: Systems
 - [ ] Lecture 19: Dynamic Memory Allocation: Basic Concepts
 - [ ] Lecture 20: Dynamic Memory Allocation: Advanced Concepts
@@ -215,7 +270,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Recitation 06: C Review
 - [x] Recitation 07: Cache Lab and Blocking
 - [x] Recitation 08: Exam Review
-- [ ] Recitation 09: Shell Lab, Processes, and Signals, and I/O
+- [x] Recitation 09: Shell Lab, Processes, and Signals, and I/O
 - [ ] Recitation 10: Virtual Memory
 - [ ] Recitation 11: Malloc Lab
 - [ ] Recitation 12: Debugging Malloc Lab
