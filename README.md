@@ -146,20 +146,20 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [ ] Chapter 09 - Virtual Memory
   - [x] 9.1 Physical and Virtual Addressing
   - [x] 9.2 Address Spaces
-  - [ ] 9.3 VM as a Tool for Caching
+  - [x] 9.3 VM as a Tool for Caching
     - [x] 9.3.1 DRAM Cache Organization
     - [x] 9.3.2 Page Tables
-    - [ ] 9.3.3 Page Hits
-    - [ ] 9.3.4 Page Faults
-    - [ ] 9.3.5 Allocating Pages
-    - [ ] 9.3.6 Locality to the Rescue Again
-  - [ ] 9.4 VM as a Tool for Memory Management
-  - [ ] 9.5 VM as a Tool for Memory Protection
-  - [ ] 9.6 Address Translation
-    - [ ] 9.6.1 Integrating Caches and VM
-    - [ ] 9.6.2 Speeding Up Address Translation with a TLB
-    - [ ] 9.6.3 Multi-Level Page Tables
-    - [ ] 9.6.4 Putting It Together: End-to-End Address Translation
+    - [x] 9.3.3 Page Hits
+    - [x] 9.3.4 Page Faults
+    - [x] 9.3.5 Allocating Pages
+    - [x] 9.3.6 Locality to the Rescue Again
+  - [x] 9.4 VM as a Tool for Memory Management
+  - [x] 9.5 VM as a Tool for Memory Protection
+  - [x] 9.6 Address Translation
+    - [x] 9.6.1 Integrating Caches and VM
+    - [x] 9.6.2 Speeding Up Address Translation with a TLB
+    - [x] 9.6.3 Multi-Level Page Tables
+    - [x] 9.6.4 Putting It Together: End-to-End Address Translation
   - [ ] 9.7 Case Study: The Intel Core i7/Linux Memory System
     - [ ] 9.7.1 Core i7 Address Translation
     - [ ] 9.7.2 Linux Virtual Memory System
@@ -254,7 +254,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Lecture 15: Exceptional Control Flow: Signals and Nonlocal Jumps
 - [x] Lecture 16: System Level I/O
 - [x] Lecture 17: Virtual Memory: Concepts
-- [ ] Lecture 18: Virtual Memory: Systems
+- [x] Lecture 18: Virtual Memory: Systems
 - [ ] Lecture 19: Dynamic Memory Allocation: Basic Concepts
 - [ ] Lecture 20: Dynamic Memory Allocation: Advanced Concepts
 - [ ] Lecture 21: Network Programming: Part I
