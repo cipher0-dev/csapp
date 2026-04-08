@@ -41,7 +41,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 3.10 Combining Control and Data in Machine-Level Programs
   - [x] 3.11 Floating-Point Code
   - [x] 3.12 Summary
-- [-] ~Chapter 04 - Processor Architecture~ - _Skip_ Not relavent to my learning objectives
+- [ ] ~Chapter 04 - Processor Architecture~ - _Skip_ Not relavent to my learning objectives
 - [x] Chapter 05 - Optimizing Program Performance
   - [x] 5.1 Capabilities and Limitations of Optimizing Compilers
   - [x] 5.2 Expressing Program Performance
@@ -160,14 +160,14 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
     - [x] 9.6.2 Speeding Up Address Translation with a TLB
     - [x] 9.6.3 Multi-Level Page Tables
     - [x] 9.6.4 Putting It Together: End-to-End Address Translation
-  - [ ] 9.7 Case Study: The Intel Core i7/Linux Memory System
-    - [ ] 9.7.1 Core i7 Address Translation
-    - [ ] 9.7.2 Linux Virtual Memory System
-  - [ ] 9.8 Memory Mapping
-    - [ ] 9.8.1 Shared Objects Revisited
-    - [ ] 9.8.2 The fork Function Revisited
-    - [ ] 9.8.3 The execve Function Revisited
-    - [ ] 9.8.4 User-Level Memory Mapping with the mmap Function
+  - [x] 9.7 Case Study: The Intel Core i7/Linux Memory System
+    - [x] 9.7.1 Core i7 Address Translation
+    - [x] 9.7.2 Linux Virtual Memory System
+  - [x] 9.8 Memory Mapping
+    - [x] 9.8.1 Shared Objects Revisited
+    - [x] 9.8.2 The fork Function Revisited
+    - [x] 9.8.3 The execve Function Revisited
+    - [x] 9.8.4 User-Level Memory Mapping with the mmap Function
   - [ ] 9.9 Dynamic Memory Allocation
     - [ ] 9.9.1 The malloc and free Functions
     - [ ] 9.9.2 Why Dynamic Memory Allocation?
@@ -255,7 +255,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Lecture 16: System Level I/O
 - [x] Lecture 17: Virtual Memory: Concepts
 - [x] Lecture 18: Virtual Memory: Systems
-- [ ] Lecture 19: Dynamic Memory Allocation: Basic Concepts
+- [x] Lecture 19: Dynamic Memory Allocation: Basic Concepts
 - [ ] Lecture 20: Dynamic Memory Allocation: Advanced Concepts
 - [ ] Lecture 21: Network Programming: Part I
 - [ ] Lecture 22: Network Programming: Part II

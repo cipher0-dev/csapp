@@ -118,3 +118,5 @@ tag bits = 12-4-2 - 6
 cache hit
 tag present and valid
 value: 0x1d
+
+9.5. Skip - I've done a lot with mmap as part of TLPI already
