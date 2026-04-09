@@ -143,7 +143,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [x] 8.6 Nonlocal Jumps
   - [x] 8.7 Tools for Manipulating Processes
   - [x] 8.8 Summary
-- [ ] Chapter 09 - Virtual Memory
+- [x] Chapter 09 - Virtual Memory
   - [x] 9.1 Physical and Virtual Addressing
   - [x] 9.2 Address Spaces
   - [x] 9.3 VM as a Tool for Caching
@@ -168,37 +168,37 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
     - [x] 9.8.2 The fork Function Revisited
     - [x] 9.8.3 The execve Function Revisited
     - [x] 9.8.4 User-Level Memory Mapping with the mmap Function
-  - [ ] 9.9 Dynamic Memory Allocation
-    - [ ] 9.9.1 The malloc and free Functions
-    - [ ] 9.9.2 Why Dynamic Memory Allocation?
-    - [ ] 9.9.3 Allocator Requirements and Goals
-    - [ ] 9.9.4 Fragmentation
-    - [ ] 9.9.5 Implementation Issues
-    - [ ] 9.9.6 Implicit Free Lists
-    - [ ] 9.9.7 Placing Allocated Blocks
-    - [ ] 9.9.8 Splitting Free Blocks
-    - [ ] 9.9.9 Getting Additional Heap Memory
-    - [ ] 9.9.10 Coalescing Free Blocks
-    - [ ] 9.9.11 Coalescing with Boundary Tags
-    - [ ] 9.9.12 Putting It Together: Implementing a Simple Allocator
-    - [ ] 9.9.13 Explicit Free Lists
-    - [ ] 9.9.14 Segregated Free Lists
-  - [ ] 9.10 Garbage Collection
-    - [ ] 9.10.1 Garbage Collector Basics
-    - [ ] 9.10.2 Mark&Sweep Garbage Collectors
-    - [ ] 9.10.3 Conservative Mark&Sweep for C Programs
-  - [ ] 9.11 Common Memory-Related Bugs in C Programs
-    - [ ] 9.11.1 Dereferencing Bad Pointers
-    - [ ] 9.11.2 Reading Uninitialized Memory
-    - [ ] 9.11.3 Allowing Stack Buffer Overflows
-    - [ ] 9.11.4 Assuming That Pointers and the Objects They Point to Are the Same Size
-    - [ ] 9.11.5 Making Off-by-One Errors
-    - [ ] 9.11.6 Referencing a Pointer Instead of the Object It Points To
-    - [ ] 9.11.7 Misunderstanding Pointer Arithmetic
-    - [ ] 9.11.8 Referencing Nonexistent Variables
-    - [ ] 9.11.9 Referencing Data in Free Heap Blocks
-    - [ ] 9.11.10 Introducing Memory Leaks
-  - [ ] 9.12 Summary
+  - [x] 9.9 Dynamic Memory Allocation
+    - [x] 9.9.1 The malloc and free Functions
+    - [x] 9.9.2 Why Dynamic Memory Allocation?
+    - [x] 9.9.3 Allocator Requirements and Goals
+    - [x] 9.9.4 Fragmentation
+    - [x] 9.9.5 Implementation Issues
+    - [x] 9.9.6 Implicit Free Lists
+    - [x] 9.9.7 Placing Allocated Blocks
+    - [x] 9.9.8 Splitting Free Blocks
+    - [x] 9.9.9 Getting Additional Heap Memory
+    - [x] 9.9.10 Coalescing Free Blocks
+    - [x] 9.9.11 Coalescing with Boundary Tags
+    - [x] 9.9.12 Putting It Together: Implementing a Simple Allocator
+    - [x] 9.9.13 Explicit Free Lists
+    - [x] 9.9.14 Segregated Free Lists
+  - [x] 9.10 Garbage Collection
+    - [x] 9.10.1 Garbage Collector Basics
+    - [x] 9.10.2 Mark&Sweep Garbage Collectors
+    - [x] 9.10.3 Conservative Mark&Sweep for C Programs
+  - [x] 9.11 Common Memory-Related Bugs in C Programs
+    - [x] 9.11.1 Dereferencing Bad Pointers
+    - [x] 9.11.2 Reading Uninitialized Memory
+    - [x] 9.11.3 Allowing Stack Buffer Overflows
+    - [x] 9.11.4 Assuming That Pointers and the Objects They Point to Are the Same Size
+    - [x] 9.11.5 Making Off-by-One Errors
+    - [x] 9.11.6 Referencing a Pointer Instead of the Object It Points To
+    - [x] 9.11.7 Misunderstanding Pointer Arithmetic
+    - [x] 9.11.8 Referencing Nonexistent Variables
+    - [x] 9.11.9 Referencing Data in Free Heap Blocks
+    - [x] 9.11.10 Introducing Memory Leaks
+  - [x] 9.12 Summary
 - [ ] ~Chapter 10 - System-Level I/O~ - _Skip_ TLPI covered this in depth
 - [ ] ~Chapter 11 - Network Programming~ - _Skip_ TLPI covered this in depth,
       and I have a lot of experience already
@@ -256,7 +256,7 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Lecture 17: Virtual Memory: Concepts
 - [x] Lecture 18: Virtual Memory: Systems
 - [x] Lecture 19: Dynamic Memory Allocation: Basic Concepts
-- [ ] Lecture 20: Dynamic Memory Allocation: Advanced Concepts
+- [x] Lecture 20: Dynamic Memory Allocation: Advanced Concepts
 - [ ] Lecture 21: Network Programming: Part I
 - [ ] Lecture 22: Network Programming: Part II
 - [ ] Lecture 23: Concurrent Programming

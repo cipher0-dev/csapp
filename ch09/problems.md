@@ -120,3 +120,36 @@ tag present and valid
 value: 0x1d
 
 9.5. Skip - I've done a lot with mmap as part of TLPI already
+
+9.6.
+
+double word alignment: 8 bytes
+block size: 4 (header) + payload + padding (to align with 8 bytes)
+
+| Request    | Block size | Block header |
+|------------|------------|--------------|
+| malloc(2)  | 8          | 0x09         |
+| malloc(9)  | 16         | 0x11         |
+| malloc(15) | 24         | 0x19         |
+| malloc(20) | 24         | 0x19         |
+
+9.7.
+
+| Alignment    | Allocated block       | Free block        | Min block size (bytes) |
+|--------------|-----------------------|-------------------|------------------------|
+| Single word  | Header and footer     | Header and footer | 12                     |
+| Single word  | Header, but no footer | Header and footer | 8                      |
+| Double word  | Header and footer     | Header and footer | 16                     |
+| Double word  | Header, but no footer | Header and footer | 8                      |
+
+[header-4] [payload-n] [padding-?] [footer-4*]
+4          1           3           4
+4          1           3           0
+4          1           7           4
+4          1           3           0
+
+9.8. Skip
+9.9. Skip
+
+9.10. Allocating and freeing many small values, and then moving on to allocating
+and free many large values.
