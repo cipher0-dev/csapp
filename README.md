@@ -214,14 +214,14 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
   - [ ] ~DATA:TNEG~ - _Skip_
 - Chapter 03:
   - [x] ASM:I32 - Read but didn't do the practice problems
-  - [ ] ASM:EASM
+  - [ ] ASM:EASM - _Skip_
 - Chapter 04:
   - [ ] ~ARCH:VLOG~ — _Skip_ Not relavent to my learning objectives
   - [ ] ~ARCH:HCL~ — _Skip_ Not relavent to my learning objectives
 - Chapter 05:
   - [x] OPT:SIMD - Read but didn't do the practice problems
 - Chapter 06:
-  - [ ] MEM:BLOCKING
+  - [ ] MEM:BLOCKING - _Skip_
 
 ## Labs
 
@@ -231,9 +231,9 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Bomb
 - [x] Attack
 - [x] Cache
-- [ ] Malloc
-- [ ] Shell
-- [ ] Proxy
+- [ ] Malloc - _Skip_ Covered in K&R C
+- [ ] Shell - _Skip_ Covered in TLPI
+- [ ] Proxy - _Skip_ Covered in TLPI and I have a lot of experience already
 
 ## Lectures
 
@@ -257,13 +257,13 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Lecture 18: Virtual Memory: Systems
 - [x] Lecture 19: Dynamic Memory Allocation: Basic Concepts
 - [x] Lecture 20: Dynamic Memory Allocation: Advanced Concepts
-- [ ] Lecture 21: Network Programming: Part I
-- [ ] Lecture 22: Network Programming: Part II
-- [ ] Lecture 23: Concurrent Programming
-- [ ] Lecture 24: Synchronization: Basics
-- [ ] Lecture 25: Synchronization: Advanced
-- [ ] Lecture 26: Thread-Level Parallelism
-- [ ] Lecture 27: Future of Computing
+- [x] Lecture 21: Network Programming: Part I
+- [x] Lecture 22: Network Programming: Part II
+- [x] Lecture 23: Concurrent Programming
+- [x] Lecture 24: Synchronization: Basics
+- [x] Lecture 25: Synchronization: Advanced
+- [x] Lecture 26: Thread-Level Parallelism
+- [x] Lecture 27: Future of Computing
 - [x] Recitation 03: Datalab and Data Representations
 - [x] Recitation 04: Bomb Lab
 - [x] Recitation 05: Attack Lab and Stacks
@@ -271,12 +271,12 @@ the textbook [CS:AAP3e][book], [lab exercises][labs], and
 - [x] Recitation 07: Cache Lab and Blocking
 - [x] Recitation 08: Exam Review
 - [x] Recitation 09: Shell Lab, Processes, and Signals, and I/O
-- [ ] Recitation 10: Virtual Memory
-- [ ] Recitation 11: Malloc Lab
-- [ ] Recitation 12: Debugging Malloc Lab
-- [ ] Recitation 13: Proxy Lab
-- [ ] Recitation 14: Synchronization
-- [ ] Recitation 15: Exam review
+- [ ] Recitation 10: Virtual Memory - _Skip_
+- [ ] Recitation 11: Malloc Lab - _Skip_
+- [ ] Recitation 12: Debugging Malloc Lab - _Skip_
+- [ ] Recitation 13: Proxy Lab - _Skip_
+- [ ] Recitation 14: Synchronization - _Skip_
+- [ ] Recitation 15: Exam review - _Skip_
 
 [course]: https://www.cs.cmu.edu/~213/
 [book]: https://csapp.cs.cmu.edu/
